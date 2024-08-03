@@ -35,7 +35,7 @@ const MainHeader = () => {
   };
 
   return (
-    <div className="fixed w-[100vh] z-50">
+    <div className="fixed z-50">
       <header
         className={`flex w-full bg-slate-100 h-14 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-50`}
       >
