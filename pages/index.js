@@ -155,7 +155,7 @@ export default function Home() {
           <div className="paternship-name"></div>
         </div>
 
-        <div className="flex flex-col m-auto ml-4 justify-center align-middle  mt-16 lg:flex-row">
+        <div className="flex flex-col m-auto justify-center align-middle  mt-16 lg:flex-row">
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Expense Tracking</h1>
             <p className="m-auto pl-2 mt-1">
