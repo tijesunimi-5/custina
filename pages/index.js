@@ -144,7 +144,7 @@ export default function Home() {
             transition={{
               duration: 1.2,
             }}
-            className="text-center font-medium mt-6 w-[600px] m-auto font-serif"
+            className="text-start font-medium mt-6 w-[600px] m-auto font-serif"
           >
             As a finance leader, you love control. But most company spend
             happens outside your team. So how do you empower everyone —
@@ -194,8 +194,7 @@ export default function Home() {
             <div className="feature"></div>
           </Card>
 
-          <br />
-          <br />
+          
 
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Receipt Management</h1>
