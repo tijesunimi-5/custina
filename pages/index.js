@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="relative m-auto w-[320px]">
       <div
-        className={`pt-32 m-auto justify-center align-center pl-10 w-[200px]  ${inter.className}`}
+        className={`pt-32 m-auto justify-center align-center pl-10 ${inter.className}`}
       >
         <div>
           <motion.h1
@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`uppercase font-bold text-5xl text-center ml-4 ${inter.className} w-auto`}
+            className={`uppercase font-bold m-auto text-5xl text-center ml-2 ${inter.className} w-[200px]`}
           >
             <span className="">The spend</span>{" "}
             <span className="">smart platform</span>
