@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <main className="relative w-full max-h-full">
+    <main className="relative w-full max-h-full m-auto">
       <div
         className={`pt-32 m-auto justify-center align-center pl-10 ${inter.className}`}
       >
@@ -54,7 +54,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`text-xl m-auto font-normal  w-[400px] mt-10 leading-7 lg:m-20 ${inter.className}`}
+            className={`text-xl m-auto font-normal  w-[450px] mt-10 leading-7 lg:m-20 ${inter.className}`}
           >
             An expense management platform designed for businesses to manage
             <span className="font-semibold"> expenses</span>,{" "}
@@ -77,7 +77,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className="mt-10 m-auto w-[400px] relative"
+            className="mt-10 m-auto w-[450px] relative"
           >
             <span className="absolute justify-center align-middle mt-2 h-6 ml-2 text-xl border-r-2 pr-2 border-black">
               <FontAwesomeIcon icon={faEnvelope} />
