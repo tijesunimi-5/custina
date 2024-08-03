@@ -126,7 +126,7 @@ const Footer = () => {
       </div>
 
       <div className="w-80 h-10 text-white">
-        gggg 
+         
         
       </div>
     </footer>
