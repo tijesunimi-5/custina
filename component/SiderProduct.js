@@ -2,11 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
-  faPlaneCircleExclamation,
-  faMessage,
-  faBroadcastTower,
 } from "@fortawesome/free-solid-svg-icons";
-import { FaceControls } from "@react-three/drei";
 
 const SiderProduct = (props) => {
   const { onclick } = props;

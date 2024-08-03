@@ -125,13 +125,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-80 h-10 text-white">
+      <div className="w-80 h-10 text-white z-[110]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="ionicon"
           viewBox="0 0 512 512"
           width='54'
           height='54'
+          color="white"
           className="text-white"
         >
           <path
