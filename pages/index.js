@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`uppercase font-bold m-auto text-5xl text-center ml-2 ${inter.className} `}
+            className={`uppercase font-bold m-auto text-5xl text-center ml-2 ${inter.className} w-[600px]`}
           >
             <span className="inline-block">The spend</span>{" "}
             <span className="inline-block">smart platform</span>
@@ -54,7 +54,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`text-xl m-auto font-normal  w-[450px] mt-10 leading-7 lg:m-20 ${inter.className}`}
+            className={`text-xl m-auto font-normal  w-[600px] mt-10 leading-7 lg:m-20 ${inter.className}`}
           >
             An expense management platform designed for businesses to manage
             <span className="font-semibold"> expenses</span>,{" "}
