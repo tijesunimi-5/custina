@@ -77,7 +77,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className="mt-10 m-auto w-[450px] relative"
+            className="mt-10 m-auto w-[550px] relative"
           >
             <span className="absolute justify-center align-middle mt-2 h-6 ml-2 text-xl border-r-2 pr-2 border-black">
               <FontAwesomeIcon icon={faEnvelope} />
@@ -106,14 +106,14 @@ export default function Home() {
               delay: 1.8,
               duration: 2.9,
             }}
-            className="font-thin w-[390px] m-auto mt-14 "
+            className="font-thin w-[490px] m-auto mt-14 "
           >
             Custina is a financial technology company, not a bank. Checking and
             banking services provided by Column N.A., Member FDIC.
           </motion.p>
         </div>
 
-        <div>
+        <div className="w-[600px]">
           <motion.h1
             initial={{
               y: 20,
