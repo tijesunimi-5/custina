@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`uppercase font-bold text-5xl text-left ml-0 ${inter.className} w-[200px] `}
+            className={`uppercase font-bold text-5xl text-center mr-10 ${inter.className} w-[200px] `}
           >
             <span className="">The spend</span>{" "}
             <span className="">smart platform</span>
