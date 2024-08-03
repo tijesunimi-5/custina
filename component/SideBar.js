@@ -33,7 +33,7 @@ const SideBar = () => {
     >
       <div
         onClick={stayOn}
-        className="option text-2xl font-bold bg-white w-[520px] h-[100vh] z-30 pt-16"
+        className="option text-2xl font-bold bg-white w-[520px] h-[1500px] z-30 pt-16"
       >
         <li
           className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2"

@@ -85,7 +85,7 @@ export default function Home() {
             <input
               type="email"
               placeholder="Work email address"
-              className="w-[600px] border-2 rounded-md h-10 px-10 border-black"
+              className="w-[650px] border-2 rounded-md h-10 px-10 border-black"
             />
             <button
               className="absolute right-[1.5px] rounded-tr-md rounded-br-md top-[1.95px] bg-orange-500 h-[36.2px] w-40 text-white font-semibold tracking-widest"
@@ -253,7 +253,7 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 bg-black w-full h-[300px] text-white">
+        <div className="mt-40 bg-black w-[600px] h-[300px] text-white">
           <motion.h2
             initial={{
               y: 30,
