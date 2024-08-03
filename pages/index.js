@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <main className="relative">
+    <main className="relative m-auto">
       <div
         className={`pt-32 m-auto justify-center align-center pl-10  ${inter.className}`}
       >
@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`uppercase font-bold text-5xl text-center w-[150px] ml-4 ${inter.className} w-auto`}
+            className={`uppercase font-bold text-5xl text-center ml-4 ${inter.className} w-auto`}
           >
             <span className="">The spend</span>{" "}
             <span className="">smart platform</span>
