@@ -127,7 +127,7 @@ export default function Home() {
               delay: 2,
               duration: 1.1,
             }}
-            className="ml-4 mt-24 text-3xl font-extrabold text-center w-[600px]"
+            className="ml-4 mt-24 text-3xl font-extrabold text-center "
           >
             Empower everyone to spend with confidence.
           </motion.h1>

@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  padding-left: 50px;
-  width: 300px;
-}
