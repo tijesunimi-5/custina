@@ -253,7 +253,7 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 ml-0 bg-black w-[600px] h-[300px] text-white">
+        <div className="mt-40 ml-[-50px] bg-black w-[600px] h-[300px] text-white">
           <motion.h2
             initial={{
               y: 30,
@@ -267,7 +267,7 @@ export default function Home() {
               duration: 1.4,
               ease: easeIn,
             }}
-            className="text-4xl text-center pt-20 mb-6 text-gray-200 font-extrabold"
+            className="text-4xl text-center  pt-20 mb-6 text-gray-200 font-extrabold"
           >
             See what Custina can do for you
           </motion.h2>
