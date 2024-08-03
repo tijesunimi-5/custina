@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <main className="relative w-[600px] max-h-full">
+    <main className="relative w-full max-h-full">
       <div
         className={`pt-32 m-auto justify-center align-center pl-10 ${inter.className}`}
       >
