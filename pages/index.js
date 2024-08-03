@@ -253,8 +253,8 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 bg-black h-72 text-white">
-          <motion.h1
+        <div className="mt-40 bg-black w-full h-[300px] text-white">
+          <motion.h2
             initial={{
               y: 30,
               opacity: 0,
@@ -270,7 +270,7 @@ export default function Home() {
             className="text-4xl text-center pt-20 mb-6 text-gray-200 font-extrabold"
           >
             See what Custina can do for you
-          </motion.h1>
+          </motion.h2>
           <motion.p
             initial={{
               opacity: 0,
