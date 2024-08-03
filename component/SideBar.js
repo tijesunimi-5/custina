@@ -1,7 +1,4 @@
-import {
-  faLongArrowRight,
-  faSquareArrowUpRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
@@ -24,24 +21,31 @@ const SideBar = () => {
 
     option.style.display = "block";
   };
+  const sideProduct = () => {
+    const sideproduct = document.querySelector(".sideproduct");
+
+    sideproduct.style.display = "block";
+  };
   return (
     <div
-      onClick={turnOff}
-      className="menu hidden absolute left-0 top-0 w-[600px] h-[100vh] backdrop-blur-[2px]  z-10"
+      
+      className="menu hidden absolute left-0 top-0 w-[600px] h-[100vh] backdrop-blur-[2px]  z-10 transition-all"
     >
       <div
         onClick={stayOn}
         className="option text-2xl font-bold bg-white w-[520px] h-[100vh] z-30 pt-16"
       >
-        <Link href={"/products"}>
-          <li className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2">
-            Products{" "}
-            <FontAwesomeIcon
-              className="justify-center pl-80 text-orange-400"
-              icon={faLongArrowRight}
-            />
-          </li>
-        </Link>
+        <li
+          className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2"
+          onClick={sideProduct}
+        >
+          Products{" "}
+          <FontAwesomeIcon
+            className="justify-center pl-80 text-orange-400"
+            icon={faLongArrowRight}
+          />
+        </li>
+        <Link href={"/products"}></Link>
 
         <Link href={"/solutions"}>
           <li className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2">

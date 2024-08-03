@@ -4,7 +4,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 const SiderProduct = () => {
   return (
-    <div className="absolute top-0 left-0 w-[600px] h-[100vh] backdrop-blur-[2px]  z-10">
+    <div className="sideproduct absolute top-0 left-0 w-[600px] h-[100vh] backdrop-blur-[2px]  z-10 hidden">
       <div className="flex flex-col bg-white w-[520px] h-[100vh] z-30 pt-16">
         <span className='pl-6 mt-2 text-orange-500 border-black border-b-2 pr-[336px] pb-6'>
           <FontAwesomeIcon icon={faArrowLeft} /> Main menu

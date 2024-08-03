@@ -7,6 +7,9 @@ module.exports = {
     "./layout/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "small": "320px"
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
