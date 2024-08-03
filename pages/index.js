@@ -113,7 +113,7 @@ export default function Home() {
           </motion.p>
         </div>
 
-        <div className="w-[600px]">
+        <div className="w-[600px] m-auto">
           <motion.h1
             initial={{
               y: 20,
