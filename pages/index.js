@@ -127,7 +127,7 @@ export default function Home() {
               delay: 2,
               duration: 1.1,
             }}
-            className=" mt-24 text-3xl font-extrabold text-center "
+            className=" mt-24 text-3xl font-extrabold pr-2 text-center "
           >
             Empower everyone to spend with confidence.
           </motion.h1>
@@ -144,7 +144,7 @@ export default function Home() {
             transition={{
               duration: 1.2,
             }}
-            className="text-center font-medium mt-6 w-96 m-auto font-serif"
+            className="text-center font-medium mt-6 w-[600px] m-auto font-serif"
           >
             As a finance leader, you love control. But most company spend
             happens outside your team. So how do you empower everyone —
@@ -253,7 +253,7 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 bg-black w-[600px] h-[300px] text-white">
+        <div className="mt-40 ml-0 bg-black w-[600px] h-[300px] text-white">
           <motion.h2
             initial={{
               y: 30,
