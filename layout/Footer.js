@@ -9,7 +9,7 @@ const Footer = () => {
       <div className=" text-5xl font-bold mt-8 ml-6 mb-6">Custina</div>
 
       <div className="flex ml-10 flex-col ">
-        <div className="w-[300px] flex justify-start mb-10">
+        <div className="w-[200px] flex justify-start mb-10">
           <div>
             <h1 className="text-2xl font-bold mb-4">Product</h1>
             <ul className="w-[300px] text-gray-300 text-[1em] font-medium ">
