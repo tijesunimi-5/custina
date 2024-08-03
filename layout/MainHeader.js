@@ -25,19 +25,21 @@ const MainHeader = () => {
     const open = document.querySelector(".open");
     const close = document.querySelector(".close");
     const menu = document.querySelector(".menu");
+    const sideProduct = document.querySelector(".sideproduct");
 
     if ((close.style.display = "block")) {
       close.style.display = "none";
       menu.style.display = "none";
       open.style.display = "block";
       open.style.display = "inline-block";
+      sideProduct.style.display = 'none'
     }
   };
 
   return (
     <div className="fixed z-50">
       <header
-        className={`flex w-full bg-slate-100 h-14 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-50`}
+        className={`flex w-full bg-slate-100 h-14 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-[100]`}
       >
         <div className="flex flex-row justify-start mt-2 ml-9">
           <h1 className={` font-semibold text-4xl ${inter.className}`}>

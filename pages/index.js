@@ -54,7 +54,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`text-xl m-auto font-normal  w-[600px] mt-10 leading-7 lg:m-20 ${inter.className}`}
+            className={`text-xl m-auto font-normal pl-6 w-[590px] mt-10 leading-7 lg:m-20 ${inter.className}`}
           >
             An expense management platform designed for businesses to manage
             <span className="font-semibold"> expenses</span>,{" "}
@@ -77,7 +77,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className="mt-10 m-auto w-[550px] relative"
+            className="mt-10 m-auto pl-6 w-[550px] relative"
           >
             <span className="absolute justify-center align-middle mt-2 h-6 ml-2 text-xl border-r-2 pr-2 border-black">
               <FontAwesomeIcon icon={faEnvelope} />
@@ -88,7 +88,7 @@ export default function Home() {
               className="w-[550px] border-2 rounded-md h-10 px-10 border-black"
             />
             <button
-              className="absolute right-[1.5px] rounded-tr-md rounded-br-md top-[1.95px] bg-orange-500 h-[36.2px] w-40 text-white font-semibold tracking-widest"
+              className="absolute right-[-22px] rounded-tr-md rounded-br-md top-[1.95px] bg-orange-500 h-[36.2px] w-40 text-white font-semibold tracking-widest"
               onClick={buttonClick}
             >
               Get started
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="paternship-name"></div>
         </div>
 
-        <div className="flex flex-col m-auto justify-center align-middle  mt-16 lg:flex-row">
+        <div className="flex flex-col m-auto justify-center align-middle pl-9  mt-16 lg:flex-row">
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Expense Tracking</h1>
             <p className="m-auto pl-2 mt-1">
@@ -253,7 +253,7 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 ml-[-50px] bg-black w-[600px] h-[300px] text-white">
+        <div className="mt-40 ml-[-50px] bg-black w-[709px] h-[300px] text-white">
           <motion.h2
             initial={{
               y: 30,

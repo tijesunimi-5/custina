@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white mt-40 p-auto flex flex-col w-[620px]">
+    <footer className="bg-black text-white mt-40 p-auto flex flex-col w-[700px]">
       <div className=" text-5xl font-bold mt-8 ml-6 mb-6">Custina</div>
 
       <div className="flex ml-10 flex-col ">
@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="ml-32">
+          <div className="ml-[200px]">
             <h1 className="text-2xl  font-bold mb-4">Platform</h1>
             <ul className="w-[200px] text-gray-300 text-[1em] font-medium ">
               <li className="hover:text-orange-300">
@@ -93,7 +93,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="ml-32">
+          <div className="ml-[200px]">
             <h1 className="text-2xl font-bold mb-4">Resources</h1>
             <ul className="w-[200px] text-gray-300 text-[1em] font-medium ">
               <li className="hover:text-orange-300">
