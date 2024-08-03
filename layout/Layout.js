@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 const Layout = (props) => {
   return (
-    <Analytics>
+    <Fragment>
       <Head>
         <link
           rel="stylesheet"
@@ -17,7 +17,7 @@ const Layout = (props) => {
       <MainHeader />
       <main>{props.children}</main>
       <Footer />
-    </Analytics>
+    </Fragment>
   );
 };
 
