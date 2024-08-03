@@ -36,8 +36,8 @@ export default function Home() {
             }}
             className={`uppercase font-bold m-auto text-5xl text-center ml-2 ${inter.className} `}
           >
-            <span className="">The spend</span>{" "}
-            <span className="">smart platform</span>
+            <span className="inline-block">The spend</span>{" "}
+            <span className="inline-block">smart platform</span>
           </motion.h1>
 
           <motion.p
