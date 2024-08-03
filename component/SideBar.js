@@ -84,7 +84,7 @@ const SideBar = () => {
           </li>
         </Link>
 
-        <div className="flex text-xl font-medium mt-80 border-t-2 border-black justify-center">
+        <div className="flex text-xl font-medium mt-96 border-t-2 border-black justify-center">
           <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2">
             Sign in
           </button>

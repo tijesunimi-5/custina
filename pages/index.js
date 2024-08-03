@@ -85,7 +85,7 @@ export default function Home() {
             <input
               type="email"
               placeholder="Work email address"
-              className="w-[650px] border-2 rounded-md h-10 px-10 border-black"
+              className="w-[550px] border-2 rounded-md h-10 px-10 border-black"
             />
             <button
               className="absolute right-[1.5px] rounded-tr-md rounded-br-md top-[1.95px] bg-orange-500 h-[36.2px] w-40 text-white font-semibold tracking-widest"
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="paternship-name"></div>
         </div>
 
-        <div className="flex flex-col m-auto justify-center align-middle  mt-16 lg:flex-row">
+        <div className="flex flex-col m-auto ml-10 justify-center align-middle  mt-16 lg:flex-row">
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Expense Tracking</h1>
             <p className="m-auto pl-2 mt-1">
