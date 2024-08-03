@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="relative">
       <div
-        className={`pt-32 small:m-auto justify-center align-center ${inter.className}`}
+        className={`pt-32 m-auto justify-center align-center ${inter.className}`}
       >
         <div>
           <motion.h1
