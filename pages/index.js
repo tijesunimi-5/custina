@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`uppercase font-bold m-auto text-5xl text-center ml-2 ${inter.className} w-[600px]`}
+            className={`uppercase font-bold text-5xl text-center ${inter.className} w-[600px]`}
           >
             <span className="inline-block">The spend</span>{" "}
             <span className="inline-block">smart platform</span>
@@ -127,7 +127,7 @@ export default function Home() {
               delay: 2,
               duration: 1.1,
             }}
-            className="ml-4 mt-24 text-3xl font-extrabold text-center"
+            className="ml-4 mt-24 text-3xl font-extrabold text-center w-[600px]"
           >
             Empower everyone to spend with confidence.
           </motion.h1>
