@@ -16,9 +16,9 @@ export default function Home() {
   };
 
   return (
-    <main className="relative m-auto w-[320px]">
+    <main className="relative m-0 w-[320px]">
       <div
-        className={`pt-32  justify-center align-center pl-10 w-[200px]  ${inter.className}`}
+        className={`pt-32 m-auto justify-center align-center pl-10 w-[200px]  ${inter.className}`}
       >
         <div>
           <motion.h1
