@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="relative w-full max-h-full m-auto">
       <div
-        className={`pt-32 m-auto w-[600px] justify-center align-center pl-10 ${inter.className}`}
+        className={`pt-32 m-auto w-[600px] justify-center align-center pl-14 ${inter.className}`}
       >
         <div>
           <motion.h1
@@ -113,7 +113,7 @@ export default function Home() {
           </motion.p>
         </div>
 
-        <div className="w-[650px]  pr-10">
+        <div className="w-[650px]  pr-6">
           <motion.h1
             initial={{
               y: 20,
@@ -144,7 +144,7 @@ export default function Home() {
             transition={{
               duration: 1.2,
             }}
-            className="text-start font-medium mt-6 w-[600px] m-auto font-serif"
+            className="text-start font-medium mt-6 w-[550px] m-auto font-serif"
           >
             As a finance leader, you love control. But most company spend
             happens outside your team. So how do you empower everyone —
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="paternship-name"></div>
         </div>
 
-        <div className="flex flex-col m-auto justify-center align-middle pl-9  mt-16 lg:flex-row">
+        <div className="flex flex-col m-auto justify-center align-middle pl-6  mt-16 lg:flex-row">
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Expense Tracking</h1>
             <p className="m-auto pl-2 mt-1">
@@ -252,7 +252,7 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 ml-[-50px] bg-black w-[709px] h-[300px] text-white">
+        <div className="mt-40 ml-[-60px] bg-black w-[709px] h-[300px] text-white">
           <motion.h2
             initial={{
               y: 30,
