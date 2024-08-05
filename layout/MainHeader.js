@@ -7,47 +7,50 @@ import SideBar from "@/component/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const MainHeader = () => {
-  const changeIcon = () => {
-    let icon = document.querySelector(".icon");
-    const open = document.querySelector(".open");
-    const close = document.querySelector(".close");
-    const menu = document.querySelector(".menu");
+const MainHeader = (props) => {
+  const {onclick} = props
+  const {click} = props
 
-    if ((open.style.display = "none")) {
-      close.style.display = "block";
-      close.style.display = "inline-block";
-      menu.style.display = "block";
-    }
-  };
 
-  const changeIconii = () => {
-    const open = document.querySelector(".open");
-    const close = document.querySelector(".close");
-    const menu = document.querySelector(".menu");
-    const sideProduct = document.querySelector(".sideproduct");
+  // const changeIcon = () => {
+  //   let icon = document.querySelector(".icon");
+  //   const open = document.querySelector(".open");
+  //   const close = document.querySelector(".close");
+  //   const menu = document.querySelector(".menu");
 
-    if ((close.style.display = "block")) {
-      close.style.display = "none";
-      menu.style.display = "none";
-      open.style.display = "block";
-      open.style.display = "inline-block";
-      sideProduct.style.display = 'none'
-    }
-  };
+  //   if ((open.style.display = "none")) {
+  //     close.style.display = "block";
+  //     close.style.display = "inline-block";
+  //     menu.style.display = "block";
+  //   }
+  // };
+
+  // const changeIconii = () => {
+  //   const open = document.querySelector(".open");
+  //   const close = document.querySelector(".close");
+  //   const menu = document.querySelector(".menu");
+  //   const sideProduct = document.querySelector(".sideproduct");
+
+  //   if ((close.style.display = "block")) {
+  //     close.style.display = "none";
+  //     menu.style.display = "none";
+  //     open.style.display = "block";
+  //     sideProduct.style.display = "none";
+  //   }
+  // };
 
   return (
     <div className="fixed z-50">
       <header
-        className={`flex w-full bg-slate-100 h-14 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-[100]`}
+        className={`flex w-full bg-slate-100 h-20 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-[100]`}
       >
-        <div className="flex flex-row justify-start mt-2 ml-9">
+        <div className="flex flex-row pt-3 justify-start mt-2 ml-9">
           <h1 className={` font-semibold text-4xl ${inter.className}`}>
             <span className="mr-4 cursor-pointer">
-              <span onClick={changeIcon} className="icon ">
+              <span onClick={onclick} className="icon ">
                 <FontAwesomeIcon className="open" icon={faAlignJustify} />
               </span>
-              <span className="close hidden " onClick={changeIconii}>
+              <span className="close hidden " onClick={click}>
                 <FontAwesomeIcon icon={faClose} />
               </span>
             </span>
@@ -76,6 +79,7 @@ const MainHeader = () => {
           </button>
         </div>
       </header>
+
       <SideBar />
     </div>
   );

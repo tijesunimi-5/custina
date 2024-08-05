@@ -16,9 +16,9 @@ export default function Home() {
   };
 
   return (
-    <main className="relative w-full max-h-full m-auto">
+    <main className=" relative ml-12 w-[500px] m-auto">
       <div
-        className={`pt-32 m-auto w-[600px] justify-center align-center pl-14 ${inter.className}`}
+        className={`home pt-32 m-auto w-[500px] justify-center pr-12 align-center pl-2 ${inter.className}`}
       >
         <div>
           <motion.h1
@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
               ease: easeInOut,
             }}
-            className={`uppercase font-bold text-5xl text-center ${inter.className} w-[600px]`}
+            className={`uppercase font-bold pr-6 text-5xl text-center ${inter.className} w-[600px]`}
           >
             <span className="inline-block">The spend</span>{" "}
             <span className="inline-block">smart platform</span>
@@ -106,14 +106,14 @@ export default function Home() {
               delay: 1.8,
               duration: 2.9,
             }}
-            className="font-thin w-[490px] m-auto mt-14 "
+            className="font-thin w-[490px] pl-10 ml-[-10px] m-auto mt-14 "
           >
             Custina is a financial technology company, not a bank. Checking and
             banking services provided by Column N.A., Member FDIC.
           </motion.p>
         </div>
 
-        <div className="w-[650px]  pr-6">
+        <div className="w-[650px]  pr-10">
           <motion.h1
             initial={{
               y: 20,
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="paternship-name"></div>
         </div>
 
-        <div className="flex flex-col m-auto justify-center align-middle pl-6  mt-16 lg:flex-row">
+        <div className="flex flex-col m-auto justify-center align-middle pl-9  mt-16 lg:flex-row">
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Expense Tracking</h1>
             <p className="m-auto pl-2 mt-1">
@@ -193,8 +193,6 @@ export default function Home() {
             </p>
             <div className="feature"></div>
           </Card>
-
-          
 
           <Card>
             <h1 className="font-bold pt-6 pl-4 text-xl">Receipt Management</h1>
@@ -252,47 +250,49 @@ export default function Home() {
 
         <Detail />
 
-        <div className="mt-40 ml-[-60px] bg-black w-[709px] h-[300px] text-white">
-          <motion.h2
-            initial={{
-              y: 30,
-              opacity: 0,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 1.4,
-              ease: easeIn,
-            }}
-            className="text-4xl text-center  pt-20 mb-6 text-gray-200 font-extrabold"
-          >
-            See what Custina can do for you
-          </motion.h2>
-          <motion.p
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{
-              duration: 2.2,
-              delay: 1.2,
-              ease: easeIn,
-            }}
-            className="ml-5"
-          >
-            Learn how our spend platform can increase the strategic impact of
-            your finance team and future-proof your company.
-          </motion.p>
-          <button
-            onClick={buttonClick}
-            className="bg-orange-500 pr-6 pl-6 pt-2 pb-2 rounded-lg mt-8 ml-8"
-          >
-            Get started
-          </button>
+        <div className=" mt-40 ml-[-40px] w-[709px] bg-black  text-white">
+          <div className="w-[709px] h-[300px] ">
+            <motion.h2
+              initial={{
+                y: 30,
+                opacity: 0,
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1.4,
+                ease: easeIn,
+              }}
+              className="text-4xl text-center  pt-20 mb-6 text-gray-200 font-extrabold"
+            >
+              See what Custina can do for you
+            </motion.h2>
+            <motion.p
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 2.2,
+                delay: 1.2,
+                ease: easeIn,
+              }}
+              className="ml-5"
+            >
+              Learn how our spend platform can increase the strategic impact of
+              your finance team and future-proof your company.
+            </motion.p>
+            <button
+              onClick={buttonClick}
+              className="bg-orange-500 pr-6 pl-6 pt-2 pb-2 rounded-lg mt-8 ml-8"
+            >
+              Get started
+            </button>
+          </div>
         </div>
       </div>
     </main>

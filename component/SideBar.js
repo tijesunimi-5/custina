@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 import SiderProduct from "./SiderProduct";
+import Sider from "@/layout/Sider";
 
 const SideBar = () => {
   const turnOff = (e) => {
@@ -16,16 +17,36 @@ const SideBar = () => {
     open.style.display = "block";
     open.style.display = "inline-block";
   };
+
+
   const stayOn = () => {
     const option = document.querySelector(".option");
 
     option.style.display = "block";
   };
+
+
   const sideProduct = () => {
     const sideproduct = document.querySelector(".sideproduct");
 
     sideproduct.style.display = "block";
   };
+
+
+  const sideSolution = () => {
+    const sidesolution = document.querySelector(".sidesolution");
+
+    sidesolution.style.display = "block"
+  }
+
+
+  const sideResources = ( ) => {
+    const sideresources = document.querySelector(".resources");
+
+    sideresources.style.display = 'block'
+  }
+
+
   const turnOffSideProduct = () => {
     const mainMenu = document.querySelector(".mainmenu");
     const sideproduct = document.querySelector(".sideproduct");
@@ -33,11 +54,12 @@ const SideBar = () => {
     sideProduct.style.display = 'none'
     console.log('working')
   }
+
   return (
-    <div className="menu hidden relative left-0 top-0 w-[700px] h-[1500px] backdrop-blur-[2px]  z-50 transition-all">
+    <div className="menu hidden  left-0 top-0 w-[800px] h-[1090px] backdrop-blur-[2px]  z-50 transition-all">
       <div
         onClick={stayOn}
-        className="option text-2xl font-bold bg-white w-[700px] h-[1500px] z-50 pt-16"
+        className="option text-2xl font-bold bg-white w-[800px] h-[150vh] z-50 pt-16 mt-9 "
       >
         <li
           className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2"
@@ -50,25 +72,24 @@ const SideBar = () => {
           />
         </li>
 
-        <Link href={"/solutions"}>
-          <li className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2">
-            Solutions{" "}
-            <FontAwesomeIcon
-              className="justify-center pl-[495px] text-orange-400"
-              icon={faLongArrowRight}
-            />
-          </li>
-        </Link>
+        <li
+          className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2"
+          onClick={sideSolution}
+        >
+          Solutions{" "}
+          <FontAwesomeIcon
+            className="justify-center pl-[495px] text-orange-400"
+            icon={faLongArrowRight}
+          />
+        </li>
 
-        <Link href={"/resources"}>
-          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-4 pb-4 border-black border-t-2 mt-2 border-b-2">
-            Resources{" "}
-            <FontAwesomeIcon
-              className="justify-center pl-[487px] text-orange-400"
-              icon={faLongArrowRight}
-            />
-          </li>
-        </Link>
+        <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-4 pb-4 border-black border-t-2 mt-2 border-b-2" onClick={sideResources}>
+          Resources{" "}
+          <FontAwesomeIcon
+            className="justify-center pl-[487px] text-orange-400"
+            icon={faLongArrowRight}
+          />
+        </li>
 
         <Link href={"/customer"}>
           <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-4 pb-4 border-black border-t-2 mt-2 border-b-2">
@@ -90,7 +111,7 @@ const SideBar = () => {
           </li>
         </Link>
 
-        <div className="flex text-xl font-medium mt-[550px] border-t-2 border-black justify-center">
+        <div className="flex text-xl  font-medium mt-[500px] border-t-2 border-black justify-center">
           <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2">
             Sign in
           </button>
@@ -98,7 +119,7 @@ const SideBar = () => {
             See a demo
           </button>
         </div>
-        <SiderProduct onClick={turnOffSideProduct} />
+        <Sider onClick={turnOffSideProduct} />
       </div>
     </div>
   );

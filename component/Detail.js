@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Detail = () => {
   return (
-    <div className="m-auto ml-20 mt-32 w-10/12">
+    <div className="m-auto ml-[60px] mt-32 w-[100%]">
       <div>
         <div>Image needed</div>
         <motion.h1
