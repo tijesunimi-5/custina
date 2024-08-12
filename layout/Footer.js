@@ -5,14 +5,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-black  text-white mt-40 p-auto flex flex-col w-[704.5px] ">
+    <footer className="footer bg-black  text-white mt-40 p-auto flex flex-col w-[725px] ">
       <div className=" text-5xl font-bold mt-8 ml-6 mb-6">Custina.</div>
 
       <div className="flex ml-10 flex-col ">
         <div className="w-[200px] flex justify-start mb-10">
           <div>
             <h1 className="text-2xl font-bold mb-4">Product</h1>
-            <ul className="w-[200px] text-gray-300 text-[1em] font-medium ">
+            <ul className="w-[230px] text-gray-300 text-[1em] font-medium ">
               <li className="hover:text-orange-300">
                 <Link href={"/"}>Corporate card</Link>
               </li>
@@ -71,7 +71,7 @@ const Footer = () => {
         <div className="w-[200px] h-[600px] flex justify-start mb-10">
           <div>
             <h1 className="text-2xl font-bold mb-4">Company</h1>
-            <ul className="w-[200px] text-gray-300 text-[1em] font-medium ">
+            <ul className="w-[230px] text-gray-300 text-[1em] font-medium ">
               <li className="hover:text-orange-300">
                 <Link href={"/"}>About Custina</Link>
               </li>

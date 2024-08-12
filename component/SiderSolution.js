@@ -1,18 +1,44 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { easeIn, motion } from "framer-motion";
+import Link from "next/link";
 
-const SiderSolution = () => {
+const SiderSolution = (props) => {
+  const { dashoff } = props;
+
   const closeSolution = () => {
-    const sideSolution = document.querySelector('.sidesolution');
+    const sideSolution = document.querySelector(".sidesolution");
+    const menu = document.querySelector(".menu");
+    const open = document.querySelector(".open");
+    const close = document.querySelector(".close");
 
-    sideSolution.style.display = 'none'
-  }
+    sideSolution.style.display = "none";
+    menu.style.display = "none";
+    close.style.display = "none";
+    open.style.display = 'block'
+    open.style.display = 'inline-block'
+  };
   return (
-    <div className="sidesolution absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden">
+    <motion.div
+      initial={{
+        x: -800,
+      }}
+      whileInView={{
+        x: 0,
+      }}
+      transition={{
+        duration: 0.2,
+        ease: easeIn,
+      }}
+      exit={{
+        x: -800,
+      }}
+      className="sidesolution absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
+    >
       <div className="flex flex-col  bg-white w-[800px] h-[100vh] z-30 pt-16">
         <span
-          className="mainmenu pl-6 mt-2 text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
+          className="mainmenu pl-6 mt-6 text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
           onClick={closeSolution}
         >
           <FontAwesomeIcon icon={faArrowLeft} /> Main menu
@@ -24,7 +50,11 @@ const SiderSolution = () => {
 
         <div>
           <div className="h-36 mt-5 pb-6 pt-4 m-auto text-2xl">
-            <div>
+            <Link
+              href={`/startups`}
+              className="startup"
+              onClick={closeSolution}
+            >
               <span className="text-[1.3em] font-semibold pl-12 ">
                 Startups
               </span>
@@ -32,7 +62,7 @@ const SiderSolution = () => {
                 icon={faArrowRight}
                 className="pl-6 transition-all hover:pl-2"
               />
-            </div>
+            </Link>
             <p className="pl-8  font-light text-2xl pt-4 w-[600px]">
               Get the only complete financial stack designed to help start and
               scale your business.
@@ -72,7 +102,7 @@ const SiderSolution = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

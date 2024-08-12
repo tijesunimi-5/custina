@@ -3,7 +3,8 @@ import SiderResources from '@/component/SiderResources'
 import SiderSolution from '@/component/SiderSolution'
 import React from 'react'
 
-const Sider = () => {
+const Sider = (props) => {
+  const dashoff = props
   return (
     <div>
       <SiderProduct />

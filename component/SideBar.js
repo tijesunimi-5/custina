@@ -2,10 +2,21 @@ import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
-import SiderProduct from "./SiderProduct";
 import Sider from "@/layout/Sider";
+import { easeOut, motion } from "framer-motion";
 
 const SideBar = () => {
+  const closeDash = () => {
+    const startup = document.querySelector(".startup");
+
+    const sideBar = document.querySelector(".menu");
+    const sideSolution = document.querySelector(".sidesolution");
+
+    sideBar.style.display = "none";
+    sideSolution.style.display = "none";
+
+    console.log(startup);
+  };
   const turnOff = (e) => {
     const menu = document.querySelector(".menu");
     const close = document.querySelector(".close");
@@ -18,13 +29,11 @@ const SideBar = () => {
     open.style.display = "inline-block";
   };
 
-
   const stayOn = () => {
     const option = document.querySelector(".option");
 
     option.style.display = "block";
   };
-
 
   const sideProduct = () => {
     const sideproduct = document.querySelector(".sideproduct");
@@ -32,37 +41,49 @@ const SideBar = () => {
     sideproduct.style.display = "block";
   };
 
-
   const sideSolution = () => {
     const sidesolution = document.querySelector(".sidesolution");
 
-    sidesolution.style.display = "block"
-  }
+    sidesolution.style.display = "block";
+  };
 
-
-  const sideResources = ( ) => {
+  const sideResources = () => {
     const sideresources = document.querySelector(".resources");
 
-    sideresources.style.display = 'block'
-  }
-
+    sideresources.style.display = "block";
+  };
 
   const turnOffSideProduct = () => {
     const mainMenu = document.querySelector(".mainmenu");
     const sideproduct = document.querySelector(".sideproduct");
 
-    sideProduct.style.display = 'none'
-    console.log('working')
-  }
+    sideProduct.style.display = "none";
+    console.log("working");
+  };
 
   return (
-    <div className="menu hidden  left-0 top-0 w-[800px] h-[1090px] backdrop-blur-[2px]  z-50 transition-all">
+    <motion.div
+      initial={{
+        x: -800,
+      }}
+      whileInView={{
+        x: 0,
+      }}
+      transition={{
+        duration: 0.2,
+        ease: easeOut,
+      }}
+      exit={{
+        x: -800,
+      }}
+      className="menu hidden  left-0 top-0 w-[800px] h-[900px] backdrop-blur-[2px]  z-50 transition-all"
+    >
       <div
         onClick={stayOn}
         className="option text-2xl font-bold bg-white w-[800px] h-[150vh] z-50 pt-16 mt-9 "
       >
         <li
-          className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2"
+          className="list-none cursor-pointer pl-4 pt-8 pb-8 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2 text-4xl font-semibold"
           onClick={sideProduct}
         >
           Products{" "}
@@ -73,7 +94,7 @@ const SideBar = () => {
         </li>
 
         <li
-          className="list-none cursor-pointer pl-4 pt-4 pb-4 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2"
+          className="list-none cursor-pointer pl-4 pt-8 pb-8 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2 text-4xl font-semibold"
           onClick={sideSolution}
         >
           Solutions{" "}
@@ -83,7 +104,10 @@ const SideBar = () => {
           />
         </li>
 
-        <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-4 pb-4 border-black border-t-2 mt-2 border-b-2" onClick={sideResources}>
+        <li
+          className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-8 pb-8 border-black border-t-2 mt-2 border-b-2 text-4xl font-semibold"
+          onClick={sideResources}
+        >
           Resources{" "}
           <FontAwesomeIcon
             className="justify-center pl-[487px] text-orange-400"
@@ -92,36 +116,36 @@ const SideBar = () => {
         </li>
 
         <Link href={"/customer"}>
-          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-4 pb-4 border-black border-t-2 mt-2 border-b-2">
+          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-8 pb-8 border-black border-t-2 mt-2 border-b-2 text-4xl font-semibold">
             Customer{" "}
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               className="justify-center pl-[490px] text-orange-400"
               icon={faLongArrowRight}
-            />
+            /> */}
           </li>
         </Link>
 
         <Link href={"/pricing"}>
-          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-4 pb-4 border-black border-t-2 mt-2 border-b-2">
+          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-8 pb-8 border-black border-t-2 mt-2 border-b-2 text-4xl font-semibold">
             Pricing{" "}
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               className="justify-center pl-[518px] text-orange-400"
               icon={faLongArrowRight}
-            />
+            /> */}
           </li>
         </Link>
 
-        <div className="flex text-xl  font-medium mt-[500px] border-t-2 border-black justify-center">
+        <div className="flex align-middle text-xl  font-medium mt-[350px] border-t-2 border-black justify-center bg-white m-auto">
           <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2">
             Sign in
           </button>
-          <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2 ml-6">
+          <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2 ml-6 mr-24">
             See a demo
           </button>
         </div>
-        <Sider onClick={turnOffSideProduct} />
+        <Sider onClick={turnOffSideProduct} dashoff={closeDash}/>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

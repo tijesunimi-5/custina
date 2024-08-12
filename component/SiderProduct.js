@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import { easeOut, motion } from "framer-motion";
 
 const SiderProduct = () => {
   const mainmenu = () => {
@@ -11,11 +12,26 @@ const SiderProduct = () => {
     sideProduct.style.display = "none";
   };
   return (
-    <div className="sideproduct absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden">
+    <motion.div
+      initial={{
+        x: -800,
+      }}
+      whileInView={{
+        x: 0,
+      }}
+      transition={{
+        duration: 0.2,
+        ease: easeOut,
+      }}
+      exit={{
+        x: -800,
+      }}
+      className="sideproduct absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
+    >
       <div className="flex flex-col  bg-white w-[800px] h-[180vh] z-30 pt-16">
         <span
           onClick={mainmenu}
-          className="mainmenu pl-6 mt-2 text-orange-500 border-black border-b-2 pr-[336px] pb-6"
+          className="mainmenu pl-6 mt-6 text-orange-500 border-black border-b-2 pr-[336px] pb-6"
         >
           <FontAwesomeIcon icon={faArrowLeft} /> Main menu
         </span>
@@ -196,7 +212,7 @@ const SiderProduct = () => {
           </div>
 
           <div className="mt-6">
-            <div className="">
+            <div className="  bg-white w-[800px] h-[110vh]">
               <span className="bg-gray-100 text-2xl font-bold pl-8 pt-6 pb-2 pr-[600px]">
                 Platform
               </span>
@@ -227,7 +243,7 @@ const SiderProduct = () => {
                 </p>
               </div>
 
-              <div className="h-28 border-b-2 border-black border-t-2 pt-1 m-auto text-2xl mt-2">
+              <div className="h-28 border-b-2 border-black border-t-2 pt-1 m-auto text-2xl mt-2 z-50">
                 <div className="flex align-middle text-center p-auto">
                   <svg
                     width="54"
@@ -348,9 +364,7 @@ const SiderProduct = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span className="text-[1.5em] font-bold pl-8 ">
-                    Mobile
-                  </span>
+                  <span className="text-[1.5em] font-bold pl-8 ">Mobile</span>
                 </div>
                 <p className="pl-8  font-medium">
                   Available on iOS and Android
@@ -360,7 +374,7 @@ const SiderProduct = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

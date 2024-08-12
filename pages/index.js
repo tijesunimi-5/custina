@@ -250,7 +250,7 @@ export default function Home() {
 
         <Detail />
 
-        <div className=" mt-40 ml-[-40px] w-[709px] bg-black  text-white">
+        <div className=" mt-40 ml-[-56px] w-[725px] bg-black  text-white">
           <div className="w-[709px] h-[300px] ">
             <motion.h2
               initial={{

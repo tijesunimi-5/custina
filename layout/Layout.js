@@ -27,19 +27,21 @@ const Layout = (props) => {
     const close = document.querySelector(".close");
     const open = document.querySelector(".open");
     const sideProduct = document.querySelector(".sideproduct");
-    const homePage = document.querySelector(".home"); 
-    const sideSolution = document.querySelector(".sidesolution"); 
-    const sideResources = document.querySelector(".resources"); 
+    const homePage = document.querySelector(".home");
+    const sideSolution = document.querySelector(".sidesolution");
+    const sideResources = document.querySelector(".resources");
 
     sideBar.style.display = "none";
     close.style.display = "none";
     open.style.display = "block";
     open.style.display = "inline-block";
     sideProduct.style.display = "none";
-    homePage.style.width = "600px";
-    sideSolution.style.display = 'none'
-    sideResources.style.display = 'none'
+    // homePage.style.width = "600px";
+    sideSolution.style.display = "none";
+    sideResources.style.display = "none";
   };
+
+ 
   return (
     <Fragment>
       <Head>
@@ -48,7 +50,7 @@ const Layout = (props) => {
           href="@fortawesome/fontawesome/css/fontawesome.css"
         />
       </Head>
-      <MainHeader onclick={headerOn} click={headerOff} />
+      <MainHeader onclick={headerOn} click={headerOff}  />
       <main>{props.children}</main>
       <Footer />
     </Fragment>

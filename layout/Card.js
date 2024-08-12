@@ -15,7 +15,7 @@ const Card = (props) => {
       transition={{
         duration: 1.5,
       }}
-      className="w-[550px] m-auto h-72 bg-slate-100 rounded-2xl shadow-xl mt-10"
+      className="w-[600px]  m-auto h-96 bg-slate-100 rounded-2xl shadow-xl mt-10 ml-[-30px]"
     >
       {props.children}
     </motion.div>
