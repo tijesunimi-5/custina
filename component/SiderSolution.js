@@ -36,7 +36,7 @@ const SiderSolution = (props) => {
       }}
       className="sidesolution absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
     >
-      <div className="flex flex-col  bg-white w-[800px] h-[100vh] z-30 pt-16">
+      <div className="flex flex-col  bg-white w-[800px] h-[120vh] z-30 pt-16">
         <span
           className="mainmenu pl-6 mt-6 text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
           onClick={closeSolution}

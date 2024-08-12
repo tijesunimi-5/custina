@@ -80,7 +80,7 @@ const SideBar = () => {
     >
       <div
         onClick={stayOn}
-        className="option text-2xl font-bold bg-white w-[800px] h-[150vh] z-50 pt-16 mt-9 "
+        className="option relative text-2xl font-bold bg-white w-[800px] h-[120vh] z-50 pt-16 mt-9 "
       >
         <li
           className="list-none cursor-pointer pl-4 pt-8 pb-8 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2 text-4xl font-semibold"
@@ -135,7 +135,7 @@ const SideBar = () => {
           </li>
         </Link>
 
-        <div className="flex align-middle text-xl  font-medium mt-[350px] border-t-2 border-black justify-center bg-white m-auto">
+        <div className="flex align-middle text-xl absolute bottom-0 right-0 left-0  font-medium  border-t-2 border-black justify-center bg-white m-auto">
           <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2">
             Sign in
           </button>
