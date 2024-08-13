@@ -26,7 +26,7 @@ const SiderResources = () => {
       }}
       className="resources absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
     >
-      <div className="flex flex-col  bg-white w-[800px] h-[180vh] z-30 pt-16">
+      <div className="flex flex-col  bg-white w-[800px] h-[200vh] z-30 pt-16">
         <span
           className="mainmenu pl-6 mt-6 text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
           onClick={closeResources}
@@ -140,7 +140,7 @@ const SiderResources = () => {
 
         <div>
           <div className=" mt-10 w-[720px]">
-            <span className="bg-gray-100 text-2xl  font-bold pl-8 pt-6 pb-2 w-[720px] pr-[505px]">
+            <span className="bg-gray-100 text-2xl  font-bold pl-8 pt-6 pb-2 w-[720px] pr-[305px]">
               Resource Center
             </span>
 

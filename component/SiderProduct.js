@@ -212,7 +212,7 @@ const SiderProduct = () => {
           </div>
 
           <div className="mt-6">
-            <div className="  bg-white w-[800px] h-[110vh]">
+            <div className="  bg-white w-[800px] h-[150vh]">
               <span className="bg-gray-100 text-2xl font-bold pl-8 pt-6 pb-2 pr-[600px]">
                 Platform
               </span>
