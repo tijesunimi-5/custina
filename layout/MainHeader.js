@@ -8,36 +8,18 @@ import SideBar from "@/component/SideBar";
 const inter = Inter({ subsets: ["latin"] });
 
 const MainHeader = (props) => {
-  const {onclick} = props
-  const {click} = props
+  const { onclick } = props;
+  const { click } = props;
 
+  const custina = () => {
+    const sideBar = document.querySelector(".menu");
+    const close = document.querySelector(".close");
+    const open = document.querySelector(".open");
 
-  // const changeIcon = () => {
-  //   let icon = document.querySelector(".icon");
-  //   const open = document.querySelector(".open");
-  //   const close = document.querySelector(".close");
-  //   const menu = document.querySelector(".menu");
-
-  //   if ((open.style.display = "none")) {
-  //     close.style.display = "block";
-  //     close.style.display = "inline-block";
-  //     menu.style.display = "block";
-  //   }
-  // };
-
-  // const changeIconii = () => {
-  //   const open = document.querySelector(".open");
-  //   const close = document.querySelector(".close");
-  //   const menu = document.querySelector(".menu");
-  //   const sideProduct = document.querySelector(".sideproduct");
-
-  //   if ((close.style.display = "block")) {
-  //     close.style.display = "none";
-  //     menu.style.display = "none";
-  //     open.style.display = "block";
-  //     sideProduct.style.display = "none";
-  //   }
-  // };
+    sideBar.style.display = "none";
+    close.style.display = "none";
+    open.style.display = 'inline-block'
+  };
 
   return (
     <div className="fixed z-50">
@@ -55,7 +37,9 @@ const MainHeader = (props) => {
               </span>
             </span>
 
-            <Link href={"/"}>Custina.</Link>
+            <Link href={"/"} onClick={custina}>
+              Custina.
+            </Link>
           </h1>
 
           <div className="hidden ml-10 mt-2 font-medium text-[1em] lg:block">

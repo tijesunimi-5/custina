@@ -16,8 +16,8 @@ const SiderSolution = (props) => {
     sideSolution.style.display = "none";
     menu.style.display = "none";
     close.style.display = "none";
-    open.style.display = 'block'
-    open.style.display = 'inline-block'
+    open.style.display = "block";
+    open.style.display = "inline-block";
   };
   return (
     <motion.div
@@ -70,7 +70,11 @@ const SiderSolution = (props) => {
           </div>
 
           <div className="h-36 mt-10 pb-6 pt-4 m-auto text-2xl">
-            <div>
+            <Link
+              href={"/companysize"}
+              className="companySize"
+              onClick={closeSolution}
+            >
               <span className="text-[1.3em] font-semibold pl-12 ">
                 Mid-size companies
               </span>
@@ -78,7 +82,7 @@ const SiderSolution = (props) => {
                 icon={faArrowRight}
                 className="pl-6 transition-all hover:pl-2"
               />
-            </div>
+            </Link>
             <p className="pl-8 text-2xl font-light pt-4 w-[600px]">
               Simplify travel and expenses with automation that makes it easy
               for employees to comply.

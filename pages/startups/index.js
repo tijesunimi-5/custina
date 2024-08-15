@@ -1,24 +1,27 @@
-import React from 'react'
-import { easeInOut, motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Card from '@/layout/Card';
+import React from "react";
+import { Inter } from "next/font/google";
+import { easeInOut, motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Card from "@/layout/Card";
 
+const inter = Inter({ subsets: ["latin"] });
 
-const index = () => {  
+const index = () => {
   return (
     <div
-      className={`home  m-auto w-[500px] justify-center pr-12 align-center pl-2 `}
+      className={`startup  m-auto w-[500px] justify-center pr-12 align-center pl-2 ${inter.className} `}
     >
       <div className="bg-black pt-28 w-[729px] text-white h-[100vh] ml-[-10px] pl-10">
         <div>Image needed</div>
-        <h1 className="text-7xl font-extrabold space-x-2 letter-spacing-sm">
+        <h1 className="text-7xl font-extrabold space-x-2 tracking-wide">
           The financial stack you can bank on.
         </h1>
         <p className="text-4xl pt-10 font-semibold">
           Get business banking, card, bill pay, travel, and reimbursements --
           all in one scalable solution
         </p>
+
         <motion.form
           initial={{
             opacity: 0,
@@ -86,7 +89,7 @@ const index = () => {
             <li className="pb-6">Sign up all online in just 10 minutes</li>
           </ul>
 
-          <p className="text-red-400 text-3xl">
+          <p className="text-red-400 text-2xl">
             Learn more about Custina business accounts{" "}
             <FontAwesomeIcon icon={faArrowRight} />
           </p>
@@ -150,24 +153,207 @@ const index = () => {
           </p>
         </div>
 
-        <div className='w-[650px] m-auto mt-28'>
+        <div className="w-[650px] m-auto mt-28">
           <div>image needed</div>
-          <h1 className='text-6xl font-extrabold text-start'>Give corporate cards to your crew.</h1>
-          <p className='text-3xl font-bold mt-10'>
-            Unlock credit based on your business, not your credit score. And easily issue cards and reimbursements.
+          <h1 className="text-6xl font-extrabold text-start">
+            Give corporate cards to your crew.
+          </h1>
+          <p className="text-3xl font-bold mt-10">
+            Unlock credit based on your business, not your credit score. And
+            easily issue cards and reimbursements.
           </p>
-          <ul className='mt-6 list-disc text-3xl ml-7'>
-            <li className='pb-6'>No personal guarantee required</li>
-            <li className='pb-6'>Unlimited virtual and physical cards</li>
-            <li className='pb-6'>Rewards that grow your business</li>
-            <li className='pb-6'>24/7 fraud monitoring and protection</li>
-            <li className='pb-6'>Apple Pay and mobile wallet</li>
+          <ul className="mt-6 list-disc text-3xl ml-7">
+            <li className="pb-6">No personal guarantee required</li>
+            <li className="pb-6">Unlimited virtual and physical cards</li>
+            <li className="pb-6">Rewards that grow your business</li>
+            <li className="pb-6">24/7 fraud monitoring and protection</li>
+            <li className="pb-6">Apple Pay and mobile wallet</li>
           </ul>
-          <p className='text-red-400 text-2xl'>Discover everything that Custina cards offer as you scale <FontAwesomeIcon icon={faArrowRight} /></p>
+          <p className="text-red-400 text-2xl ml-[-29px] font-medium">
+            Discover everything that Custina cards offer as you scale {""}
+            <FontAwesomeIcon icon={faArrowRight} />
+          </p>
+        </div>
+
+        <div className="w-[650px] m-auto mt-28">
+          <h1 className="text-5xl font-extrabold text-center">
+            The card that manages expenses too.
+          </h1>
+
+          <div className="flex flex-col m-auto justify-between">
+            <div className="border-[1px] border-black mb-6 p-10 rounded-lg mt-12">
+              <h1 className="text-4xl font-bold font-sans pb-6">
+                Built-in controls
+              </h1>
+              <p className="text-2xl font-semibold">
+                Create spend limits (for employees, teams, even vendors) with
+                auto-enforced rules to enable and control spending
+              </p>
+            </div>
+
+            <div className="border-[1px] border-black mb-6 p-10 rounded-lg">
+              <h1 className="text-4xl font-bold font-sans pb-6">
+                Easy integrations
+              </h1>
+              <p className="text-2xl font-semibold">
+                Automatically sync card expenses with the software you already
+                use for <a className="underline">accounting,</a>{" "}
+                <a className="underline">payroll,</a>{" "}
+                <a className="underline">and benefits.</a>
+              </p>
+            </div>
+
+            <div className="border-[1px] border-black mb-6 p-10 rounded-lg">
+              <h1 className="text-4xl font-bold font-sans pb-6">
+                AL-driven automation
+              </h1>
+              <p className="text-2xl font-semibold">
+                Simplify expenses with real-time tracking and reporting, and
+                auto-generated receipts and memos.
+              </p>
+            </div>
+
+            <div className="border-[1px] border-black mb-6 p-10 rounded-lg">
+              <h1 className="text-4xl font-bold font-sans pb-6">
+                Reimbursements
+              </h1>
+              <p className="text-2xl font-semibold">
+                Don't want to give 'em a card? that's okay. Issue hassle-free
+                reimbursements for anyone on the team.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[650px] rounded-3xl mt-28 h-[500px] bg-[#f0f8ff] m-auto p-10 pt-16">
+            <h1 className="text-5xl font-bold font-sans pb-6">
+              The only financial stack that puts your name in lights.
+            </h1>
+            <p className="text-3xl font-medium pt-10 mb-6">
+              Earn points onyour Custina card and redeem for billboards in
+              places like Times Square and at prominent startup events.
+            </p>
+            <a href="" className="text-2xl font-bold text-red-500 ">
+              Open an account
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col w-[720px] h-[840px] bg-[#f0f8ff] mt-44">
+          <div>
+            <span>Image</span>
+            Testimonial
+          </div>
+
+          <span className="mt-32">Image</span>
+
+          <div className="m-auto w-[600px]">
+            <h1 className="text-6xl font-bold font-sans pb-6">
+              Get more runaway for the ride.
+            </h1>
+            <p className="text-[1.8em] font-bold">
+              You're going places, and Custina has all the financial tools you
+              need to reach your exit.
+            </p>
+            <ul className="list-disc text-2xl font-bold pl-6 pt-8 tracking-wider">
+              <li className="pt-6">Automated tax and policy compliance</li>
+              <li className="pt-6">
+                Cards and reimbursements in local currency
+              </li>
+              <li className="pt-6">Enterprise-grade security & support</li>
+              <li className="pt-6">
+                Custom policies and expense approval chains
+              </li>
+              <li className="pt-6 mb-10">
+                Over $400K in discounts on AI and SaaS tools
+              </li>
+            </ul>
+
+            <a className="text-red-500 text-2xl font-semibold">
+              Learn more about expense management{" "}
+              <FontAwesomeIcon icon={faArrowRight} />
+            </a>
+          </div>
+        </div>
+
+        <div className="w-[700px] h-[700px] mt-44 ">
+          <div className="w-[600px] m-auto">
+            <h1 className="text-6xl font-bold font-sans pb-6">
+              Your copilot at every stage.
+            </h1>
+            <p className="text-3xl font-bold mb-10">
+              We serve founders as well as global companies with 10,000+
+              employees. Everything you need is here, Whenever you're ready.
+            </p>
+
+            <ul className="list-disc text-2xl font-medium pl-6">
+              <li className="pb-6">
+                Enable your team to{" "}
+                <a className="underline">book their own travel</a> right in
+                Custina
+              </li>
+              <li className="pb-6">
+                Use Custina <a className="underline">APIs</a> to build cutom
+                tools and workflows
+              </li>
+              <li className="pb-6">
+                Go <a className="underline">global</a> and operate in nearly any
+                country and currency.
+              </li>
+              <li className="pb-6">
+                Upgrade to advanced enterprise{" "}
+                <a className="underline">expense management</a>
+              </li>
+            </ul>
+
+            <a className="text-2xl text-red-500 font-semibold">
+              Get started <FontAwesomeIcon icon={faArrowRight} />
+            </a>
+          </div>
+        </div>
+
+        <div className="w-[700px] h-[700px] mt-44 bg-gray-200">
+          <div className="m-auto w-[600px] ">
+            <h1 className="text-6xl font-extrabold font-serif mt-16">
+              Let's grow together
+            </h1>
+            <p className="text-3xl mt-10 font-bold mb-10">
+              We love supporting founders by sharing our content, community, and
+              connections.
+            </p>
+            <ul className="list-disc pl-6 font-medium text-3xl">
+              <li className="pb-6">Attend founder events and webinars</li>
+              <li className="pb-6">
+                Meet industry experts, VCs, and accelerators
+              </li>
+              <li className="pb-6">
+                Hire accountants and other service professionals
+              </li>
+            </ul>
+            <a className="underline text-2xl text-red-500">
+              Get our founder newsletter <FontAwesomeIcon icon={faArrowRight} />
+            </a>
+          </div>
+        </div>
+
+        <div className="w-full mt-44">
+          <div>
+            <div>Testimonials</div>
+
+            <div className="mt-32">
+              <h1 className="text-5xl font-bold text-center">
+                Everything you'll need as you scale.
+              </h1>
+              <p className="text-center text-3xl font-medium mt-4">
+                Don't waste time assembling disparate tools or switching
+                providers every round. Get one unified stack you'll never
+                outgrow.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default index
+export default index;

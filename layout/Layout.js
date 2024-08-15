@@ -19,7 +19,6 @@ const Layout = (props) => {
     open.style.display = "none";
     // homePage.style.overflowY = "hidden";
 
-    console.log(homePage);
   };
 
   const headerOff = () => {
