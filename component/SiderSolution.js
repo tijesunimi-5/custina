@@ -96,7 +96,7 @@ const SiderSolution = (props) => {
           </div>
 
           <div className="h-36 mt-10 pb-6 pt-4 m-auto text-2xl">
-            <Link href={'/solutionPages/enterprise'}>
+            <Link href={'/solutionPages/enterprise'} className="enterprise" onClick={closeSolution}>
               <span className="text-[1.3em] font-semibold pl-12 ">
                 Enterprise
               </span>
