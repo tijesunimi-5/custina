@@ -56,11 +56,11 @@ const MainHeader = (props) => {
             Sign In
           </Link>
           <Link href={"/"} className="hidden mt-4 mr-10 lg:block">
-            See a demo
+            Contact team
           </Link>
-          <button className="w-32 bg-orange-400 mr-10 h-10 m-auto text-white font-semibold rounded-md">
+          {/* <button className="w-32 bg-orange-400 mr-10 h-10 m-auto text-white font-semibold rounded-md">
             Get started
-          </button>
+          </button> */}
         </div>
       </header>
 

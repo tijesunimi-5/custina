@@ -12,7 +12,7 @@ const index = () => {
     <div
       className={`startup  m-auto w-[500px] justify-center pr-12 align-center pl-2 ${inter.className} `}
     >
-      <div className="bg-black pt-28 w-[729px] text-white h-[100vh] ml-[-10px] pl-10">
+      <div className="bg-[#f0f8ff] pt-28 w-[729px] text-black h-[100vh] ml-[-10px] pl-10">
         <div>Image needed</div>
         <h1 className="text-7xl font-extrabold space-x-2 tracking-wide">
           The financial stack you can bank on.

@@ -76,11 +76,11 @@ const SideBar = () => {
       exit={{
         x: -800,
       }}
-      className="menu hidden  left-0 top-0 w-[800px] h-[900px] backdrop-blur-[2px]  z-50 transition-all"
+      className="menu hidden  left-0 top-0 w-[800px] h-[120vh] backdrop-blur-[2px]  z-50 transition-all"
     >
       <div
         onClick={stayOn}
-        className="option relative text-2xl font-bold bg-white w-[800px] h-[150vh] z-50 pt-16 mt-9 "
+        className="option relative text-2xl font-bold bg-white w-[800px] h-[180vh] z-50 pt-16 mt-9 "
       >
         <li
           className="list-none cursor-pointer pl-4 pt-8 pb-8 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2 text-4xl font-semibold"
@@ -135,12 +135,12 @@ const SideBar = () => {
           </li>
         </Link>
 
-        <div className="flex align-middle text-xl absolute bottom-0 right-0 left-0  font-medium  border-t-2 border-black justify-center bg-white w-[800px]  m-auto">
+        <div className="flex align-middle text-3xl absolute bottom-32 right-0 left-0  font-medium  border-t-2 border-black justify-center bg-white w-[800px]   m-auto">
           <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2">
             Sign in
           </button>
           <button className="pt-1 mt-10 pb-1 pl-3 pr-3 rounded-md border-black border-2 ml-6 mr-24">
-            See a demo
+            Contact team
           </button>
         </div>
         <Sider onClick={turnOffSideProduct} dashoff={closeDash} />

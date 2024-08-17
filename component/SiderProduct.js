@@ -26,7 +26,7 @@ const SiderProduct = () => {
       exit={{
         x: -800,
       }}
-      className="sideproduct absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
+      className="sideproduct absolute top-0 left-0 w-[800px] h-[170vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
     >
       <div className="flex flex-col  bg-white w-[800px] h-[180vh] z-30 pt-16">
         <span

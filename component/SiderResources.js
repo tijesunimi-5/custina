@@ -24,7 +24,7 @@ const SiderResources = () => {
       exit={{
         x: -800,
       }}
-      className="resources absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
+      className="resources absolute top-0 left-0 w-[800px] h-[180vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
     >
       <div className="flex flex-col  bg-white w-[800px] h-[200vh] z-30 pt-16">
         <span

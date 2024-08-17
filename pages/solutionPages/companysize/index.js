@@ -7,7 +7,7 @@ import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const index = () => {
   return (
     <div className="companysize m-auto w-[500px] justify-center pr-12 align-center pl-2 ">
-      <div className="bg-black pt-28 w-[729px] text-white h-[90vh] ml-[-10px] pl-10">
+      <div className="bg-[#f0f8ff] pt-28 w-[729px] text-black h-[90vh] ml-[-10px] pl-10">
         <div>Image needed</div>
         <h1 className="text-7xl font-extrabold space-x-2 tracking-wide">
           Keep spend in control for your next stage of growth.
@@ -164,13 +164,23 @@ const index = () => {
             Automate expense and accounting busywork with AI.
           </h1>
           <p className="text-3xl font-medium  mt-6 mb-6">
-            Custina AI automates receipts capture, expense categorization, and manager approvals so you can close the books faster. And Custina Assistant 
+            Custina AI automates receipts capture, expense categorization, and
+            manager approvals so you can close the books faster. And Custina
+            Assistant instantly answers employee questions, like: "How much can
+            I spend on a team dinner?"
           </p>
 
           <a className="text-2xl font-normal text-red-500">
-            Explore our credit card <FontAwesomeIcon icon={faArrowRight} />
-           </a>
+            Explore AI-powered automation{" "}
+            <FontAwesomeIcon icon={faArrowRight} />
+          </a>
         </div>
+      </div>
+
+      <div className="m-auto text-center mt-44">Testimonial</div>
+
+      <div className="m-auto ml-14 font-bold text-4xl">
+        <h1>FAQ</h1>
       </div>
     </div>
   );

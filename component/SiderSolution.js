@@ -7,6 +7,12 @@ import Link from "next/link";
 const SiderSolution = (props) => {
   const { dashoff } = props;
 
+  const closeMenu = ( ) => {
+    const sideSolution = document.querySelector(".sidesolution");
+
+    sideSolution.style.display = 'none'
+  }
+
   const closeSolution = () => {
     const sideSolution = document.querySelector(".sidesolution");
     const menu = document.querySelector(".menu");
@@ -34,12 +40,12 @@ const SiderSolution = (props) => {
       exit={{
         x: -800,
       }}
-      className="sidesolution absolute top-0 left-0 w-[800px] h-[150vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden"
+      className="sidesolution absolute top-0 left-0 w-[800px] h-[180vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden bg-white "
     >
-      <div className="flex flex-col  bg-white w-[800px] h-[190vh] z-30 pt-16">
+      <div className="flex flex-col  bg-white w-[800px] h-[120vh] z-30 pt-16">
         <span
           className="mainmenu pl-6 mt-6 text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
-          onClick={closeSolution}
+          onClick={closeMenu}
         >
           <FontAwesomeIcon icon={faArrowLeft} /> Main menu
         </span>
@@ -51,7 +57,7 @@ const SiderSolution = (props) => {
         <div>
           <div className="h-36 mt-5 pb-6 pt-4 m-auto text-2xl">
             <Link
-              href={`/startups`}
+              href={`/solutionPages/startups`}
               className="startup"
               onClick={closeSolution}
             >
@@ -71,7 +77,7 @@ const SiderSolution = (props) => {
 
           <div className="h-36 mt-10 pb-6 pt-4 m-auto text-2xl">
             <Link
-              href={"/companysize"}
+              href={"/solutionPages/companysize"}
               className="companySize"
               onClick={closeSolution}
             >
@@ -90,7 +96,7 @@ const SiderSolution = (props) => {
           </div>
 
           <div className="h-36 mt-10 pb-6 pt-4 m-auto text-2xl">
-            <div>
+            <Link href={'/solutionPages/enterprise'}>
               <span className="text-[1.3em] font-semibold pl-12 ">
                 Enterprise
               </span>
@@ -98,7 +104,7 @@ const SiderSolution = (props) => {
                 icon={faArrowRight}
                 className="pl-6 transition-all hover:pl-2"
               />
-            </div>
+            </Link>
             <p className="pl-8 text-2xl font-light pt-4 w-[600px]">
               Transform finance operations and improve productivity for your
               global workforce.
