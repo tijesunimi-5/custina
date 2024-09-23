@@ -1,18 +1,18 @@
 
-
+import { FaFacebook, FaFacebookF, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-black  text-white mt-40 p-auto flex flex-col w-[725px] ">
-      <div className=" text-5xl font-bold mt-8 ml-6 mb-6">Custina.</div>
+    <footer className="footer bg-black  text-white mt-40 p-auto flex flex-col w-[999px] ">
+      <div className=" text-7xl font-bold mt-8 ml-6 mb-6">Custina.</div>
 
       <div className="flex ml-10 flex-col ">
         <div className="w-[200px] flex justify-start mb-10">
           <div>
-            <h1 className="text-2xl font-bold mb-4">Product</h1>
-            <ul className="w-[230px] text-gray-300 text-[1em] font-medium ">
+            <h1 className="text-5xl font-bold mb-4">Product</h1>
+            <ul className="w-[350px] text-gray-300 text-[1.9em] font-medium ">
               <li className="hover:text-orange-300">
                 <Link href={"/"}>Corporate card</Link>
               </li>
@@ -43,9 +43,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="ml-[200px]">
-            <h1 className="text-2xl  font-bold mb-4">Platform</h1>
-            <ul className="w-[200px] text-gray-300 text-[1em] font-medium ">
+          <div className="ml-[250px]">
+            <h1 className="text-5xl  font-bold mb-4">Platform</h1>
+            <ul className="w-[200px] text-gray-300 text-[1.9em] font-medium ">
               <li className="hover:text-orange-300">
                 <Link href={"/"}>Custina AI</Link>
               </li>
@@ -68,10 +68,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-[200px] h-[200px] flex justify-start mb-10">
+        <div className="w-[200px] h-[320px] flex justify-start mb-10">
           <div>
-            <h1 className="text-2xl font-bold mb-4">Company</h1>
-            <ul className="w-[230px] text-gray-300 text-[1em] font-medium ">
+            <h1 className="text-5xl font-bold mb-4">Company</h1>
+            <ul className="w-[350px] text-gray-300 text-[1.9em] font-medium ">
               <li className="hover:text-orange-300">
                 <Link href={"/"}>About Custina</Link>
               </li>
@@ -93,9 +93,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="ml-[200px]">
-            <h1 className="text-2xl font-bold mb-4">Resources</h1>
-            <ul className="w-[200px] text-gray-300 text-[1em] font-medium ">
+          <div className="ml-[250px]">
+            <h1 className="text-5xl font-bold mb-4">Resources</h1>
+            <ul className="w-[350px] text-gray-300 text-[1.9em] font-medium ">
               <li className="hover:text-orange-300">
                 <Link href={"/"}>Customer hub</Link>
               </li>
@@ -125,20 +125,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-80 h-10 text-white z-[110]">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="ionicon"
-          viewBox="0 0 512 512"
-          width='54'
-          height='54'
-          color="white"
-        >
-          <path
-            d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
-            fill-rule="evenodd"
-          />
-        </svg>
+      <div className="flex w-[480px] mt-5 mb-10 ml-9 justify-between h-10 text-white text-5xl z-[110]">
+        <FaFacebookF />
+        <FaWhatsapp />
+        <FaInstagram />
+        <FaLinkedin />
+        <FaTwitter />
       </div>
     </footer>
   );

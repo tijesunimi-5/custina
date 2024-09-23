@@ -2,11 +2,12 @@ import React from "react";
 import { motion, easeInOut } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const index = () => {
   return (
-    <div className="companysize m-auto w-[500px] justify-center pr-12 align-center pl-2 ">
-      <div className="bg-[#f0f8ff] pt-28 w-[729px] text-black h-[90vh] ml-[-10px] pl-10">
+    <div className="companysize m-auto w-[500px] justify-center pr-12 align-center pl-2 pt-10">
+      <div className="bg-[#f0f8ff] pt-28 w-[729px] text-black h-[110vh] ml-[-10px] pl-10">
         <h1 className="text-7xl font-extrabold space-x-2 tracking-wide">
           Optimize your spend on a global scale.
         </h1>
@@ -45,7 +46,7 @@ const index = () => {
         </motion.form>
       </div>
 
-      <div className="w-[700px] mt-56 m-auto ml-1">
+      <div className="w-[700px] mt-40 m-auto ml-1">
         <div className="w-[650px] m-auto">
           <h1 className="text-6xl font-bold text-center">
             All your global spend, all in one place.
@@ -62,9 +63,9 @@ const index = () => {
             Empower global employees to make better financial decisions with
             smart cards and fast reimbursements issued in their local currency.
           </p>
-          <a className="text-2xl text-red-500">
+          <Link href={'/credit-card'} className="text-2xl text-red-500">
             Explore Custina cards <FontAwesomeIcon icon={faArrowRight} />
-          </a>
+          </Link>
         </div>
 
         <div className="border-[1px] border-black p-10 mt-10 rounded-3xl">

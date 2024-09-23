@@ -7,7 +7,7 @@ import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const index = () => {
   return (
     <div className="companysize m-auto w-[500px] justify-center pr-12 align-center pl-2 ">
-      <div className="bg-[#f0f8ff] pt-28 w-[729px] text-black h-[90vh] ml-[-10px] pl-10">
+      <div className="bg-[#f0f8ff] pt-28 w-[729px] text-black h-[120vh] ml-[-10px] pl-10">
         <div>Image needed</div>
         <h1 className="text-7xl font-extrabold space-x-2 tracking-wide">
           Keep spend in control for your next stage of growth.
@@ -39,7 +39,7 @@ const index = () => {
           <input
             type="email"
             placeholder="Work email address"
-            className="w-[550px] border-2 rounded-[20px] h-16 px-14 border-black placeholder:text-3xl"
+            className="w-[575px] border-2 rounded-[20px] h-16 px-14 border-black placeholder:text-3xl"
           />
           <button className="absolute right-[-24px] rounded-tr-[20px] rounded-br-[20px] top-[1.95px] bg-orange-500 h-[61px] w-40 text-white font-semibold tracking-widest">
             Get started
@@ -47,7 +47,7 @@ const index = () => {
         </motion.form>
       </div>
 
-      <div className="w-[700px]">
+      <div className="w-[700px] mt-20">
         <div className="w-[650px] m-auto mt-20">
           <h1 className="text-center m-auto text-5xl font-extrabold">
             Travel + expense = better on Brex.

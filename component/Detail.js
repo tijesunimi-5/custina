@@ -22,7 +22,7 @@ const Detail = () => {
             duration: 1.2,
             ease: easeInOut
           }}
-          className="text-3xl text-center font-extrabold mb-4"
+          className="text-6xl text-center font-extrabold mb-4"
         >
           Control spend before it happens
         </motion.h1>
@@ -39,7 +39,7 @@ const Detail = () => {
             delay: 0.5,
             duration: 1.2,
           }}
-          className="mb-8 font-medium"
+          className="mb-8 text-4xl font-medium"
         >
           Set budgets and allocate spend limits with auto-enforced controls that
           empower employees to spend wisely. Track and adjust in real time to
@@ -61,7 +61,7 @@ const Detail = () => {
         >
           <Link
             href={"/"}
-            className="font-thin text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
+            className="font-normal text-3xl text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
           >
             Explore Custina cards
           </Link>{" "}
@@ -83,7 +83,7 @@ const Detail = () => {
           transition={{
             duration: 1.2,
           }}
-          className="text-3xl text-center font-extrabold mb-4"
+          className="text-6xl text-center font-extrabold mb-4"
         >
           Make doing your expenses easy.
         </motion.h1>
@@ -100,7 +100,7 @@ const Detail = () => {
             delay: 0.5,
             duration: 1.2,
           }}
-          className="mb-8 font-medium"
+          className="mb-8 text-4xl font-medium"
         >
           Make expenses a breeze for employees and managers with automated
           receipts, an AI-powered expense assistant, in-app travel bookings and
@@ -121,7 +121,7 @@ const Detail = () => {
         >
           <Link
             href={"/"}
-            className="font-thin text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
+            className="font-normal text-3xl text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
           >
             Explore Custina expense management
           </Link>{" "}
@@ -143,7 +143,7 @@ const Detail = () => {
           transition={{
             duration: 1.2,
           }}
-          className="text-3xl text-center font-extrabold mb-4"
+          className="text-6xl text-center font-extrabold mb-4"
         >
           Maximize your spending power.
         </motion.h1>
@@ -160,7 +160,7 @@ const Detail = () => {
             delay: 0.5,
             duration: 1.2,
           }}
-          className="mb-8 font-medium"
+          className="mb-8 text-4xl font-medium"
         >
           Unlock 4.92% yield, fast global payments, 20x higher credit limits,
           and cash back with a Brex business account. Plus, safeguard your
@@ -182,7 +182,7 @@ const Detail = () => {
         >
           <Link
             href={"/"}
-            className="font-thin text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
+            className="font-normal text-3xl text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
           >
             Explore Custina business accounts
           </Link>{" "}
@@ -204,7 +204,7 @@ const Detail = () => {
           transition={{
             duration: 1.2,
           }}
-          className="text-3xl text-center font-extrabold mb-4"
+          className="text-6xl text-center font-extrabold mb-4"
         >
           Pay vendors faster and easier.
         </motion.h1>
@@ -221,7 +221,7 @@ const Detail = () => {
             delay: 0.5,
             duration: 1.2,
           }}
-          className="mb-8 font-medium"
+          className="mb-8 text-4xl font-medium"
         >
           Save time with AI-powered automation of invoice entry, approval, and
           payments. Issue vendor-specific cards for any teams with
@@ -242,7 +242,7 @@ const Detail = () => {
         >
           <Link
             href={"/"}
-            className="font-thin text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
+            className="font-normal text-3xl text-orange-400 hover:mr-2 transition-all hover:underline mt-10"
           >
             Explore Brex bill pay
           </Link>{" "}

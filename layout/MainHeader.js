@@ -24,10 +24,10 @@ const MainHeader = (props) => {
   return (
     <div className="fixed z-50">
       <header
-        className={`flex w-full bg-slate-100 h-20 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-[100]`}
+        className={`flex w-full bg-slate-100 h-26 text-black  border-b-4 justify-between align-middle fixed right-0 left-0 top-0 ${inter.className} z-[100]`}
       >
         <div className="flex flex-row pt-3 justify-start mt-2 ml-9">
-          <h1 className={` font-semibold text-4xl ${inter.className}`}>
+          <h1 className={` font-semibold text-6xl ${inter.className}`}>
             <span className="mr-4 cursor-pointer">
               <span onClick={onclick} className="icon ">
                 <FontAwesomeIcon className="open" icon={faAlignJustify} />
