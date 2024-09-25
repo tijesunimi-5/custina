@@ -1,10 +1,22 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { easeOut, motion } from "framer-motion";
-import { FaBookOpen, FaBroadcastTower, FaCircleNotch, FaCreditCard, FaExclamationCircle, FaFileExport, FaGlobe, FaMobile, FaPuzzlePiece, FaRegStar, FaSearchDollar, FaShoppingBag, FaWarehouse } from "react-icons/fa";
+import {
+  FaBookOpen,
+  FaBroadcastTower,
+  FaCircleNotch,
+  FaCreditCard,
+  FaExclamationCircle,
+  FaFileExport,
+  FaGlobe,
+  FaMobile,
+  FaPuzzlePiece,
+  FaRegStar,
+  FaSearchDollar,
+  FaShoppingBag,
+  FaWarehouse,
+} from "react-icons/fa";
 
 const SiderProduct = () => {
   const mainmenu = () => {
@@ -67,33 +79,11 @@ const SiderProduct = () => {
 
             <div className="h-36 border-b-2 border-black  pt-4 m-auto text-2xl">
               <div className="flex align-middle text-center p-auto">
-                <FaShoppingBag className="text-6xl ml-8" />
-                <span className="text-6xl font-bold pl-8 ">Travel</span>
-              </div>
-              <p className="pl-8 text-4xl pt-2 font-medium">
-                Book and manage global travel
-              </p>
-            </div>
-
-            <div className="h-36 border-b-2 border-black  pt-4 m-auto text-2xl">
-              <div className="flex align-middle text-center p-auto">
                 <FaFileExport className="text-6xl ml-8" />
                 <span className="text-6xl font-bold pl-8 ">Bill pay</span>
               </div>
               <p className="pl-8 text-4xl pt-2 font-medium">
                 Pay vendors faster and easier
-              </p>
-            </div>
-
-            <div className="h-36 border-b-2 border-black  pt-4 m-auto text-2xl">
-              <div className="flex align-middle text-center p-auto">
-                <FaWarehouse className="text-6xl ml-8" />
-                <span className="text-6xl font-bold pl-8 ">
-                  Business banking
-                </span>
-              </div>
-              <p className="pl-8 text-4xl pt-2 font-medium">
-                Earn yield and move money fast
               </p>
             </div>
 
@@ -127,36 +117,6 @@ const SiderProduct = () => {
               <span className="bg-gray-100 text-5xl font-bold pl-8 pt-6 pb-2  pr-[800px]">
                 Platform
               </span>
-
-              <div className="h-36 border-b-2 border-black border-t-2 pt-1 m-auto text-2xl mt-2">
-                <div className="flex align-middle text-center p-auto">
-                  <FaRegStar className="text-6xl ml-8" />
-                  <span className="text-6xl font-bold pl-8 ">Custina AI</span>
-                </div>
-                <p className="pl-8 text-4xl pt-2 font-medium">
-                  Get 10-20x higher credit limits
-                </p>
-              </div>
-
-              <div className="h-36 border-b-2 border-black pt-1 m-auto text-2xl mt-2 z-50">
-                <div className="flex align-middle text-center p-auto">
-                  <FaGlobe className="text-6xl ml-8" />
-                  <span className="text-6xl font-bold pl-8 ">Global ready</span>
-                </div>
-                <p className="pl-8 text-4xl pt-2 font-medium">
-                  Multi-currency and multi-entity
-                </p>
-              </div>
-
-              <div className="h-36 border-b-2 border-black pt-1 m-auto text-2xl mt-2">
-                <div className="flex align-middle text-center p-auto">
-                  <FaCircleNotch className="text-6xl ml-8" />
-                  <span className="text-6xl font-bold pl-8 ">Live budget</span>
-                </div>
-                <p className="pl-8 text-4xl pt-2 font-medium">
-                  Real-time tracking and agility
-                </p>
-              </div>
 
               <div className="h-36 border-b-2 border-black pt-1 m-auto text-2xl mt-2">
                 <div className="flex align-middle text-center p-auto">

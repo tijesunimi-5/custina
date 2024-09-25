@@ -17,8 +17,7 @@ export default function Home() {
 
   return (
     <main className=" relative w-[1000px] m-auto">
-      <img src="/hero.jpg" className=" w-[996px] h-[130vh] absolute left-0 " />
-      <div className="overlay"></div>
+      
       <div
         className={`home relative flex flex-col pt-32 m-auto w-[850px]  justify-center pr-12 align-center ml-16 pl-2 ${inter.className} z-30`}
       >
@@ -97,22 +96,7 @@ export default function Home() {
             </button>
           </motion.form>
 
-          <motion.p
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 1.8,
-              duration: 2.9,
-            }}
-            className="font-medium w-[690px] pl-14 ml-[-10px] m-auto mt-10 text-2xl "
-          >
-            Custina is a financial technology company, not a bank. Checking and
-            banking services provided by Column N.A., Member FDIC.
-          </motion.p>
+          
         </div>
 
         <div className="w-[900px]  pr-10">
@@ -134,7 +118,7 @@ export default function Home() {
             Empower everyone to spend with confidence.
           </motion.h1>
 
-          <motion.p
+          {/* <motion.p
             initial={{
               y: 20,
               opacity: 0,
@@ -152,7 +136,7 @@ export default function Home() {
             happens outside your team. So how do you empower everyone —
             everywhere — to spend wisely? Top companies are doing just that with
             Custina.
-          </motion.p>
+          </motion.p> */}
 
           <div className="paternship-name"></div>
         </div>
@@ -256,7 +240,7 @@ export default function Home() {
           </Card>
         </div>
 
-        <Detail />
+        
 
         <div className=" mt-40 ml-[-72px] w-[998px] bg-black  text-white">
           <div className="w-[939px] h-[450px] ">

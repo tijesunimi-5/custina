@@ -40,28 +40,28 @@ const SiderSolution = (props) => {
       exit={{
         x: -800,
       }}
-      className="sidesolution absolute top-0 left-0 w-[800px] h-[180vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden bg-white "
+      className="sidesolution absolute top-0 left-0 w-[996px] h-[260vh] backdrop-blur-[2px]  z-30 hidden overflow-y-scroll overflow-x-hidden bg-white "
     >
-      <div className="flex flex-col  bg-white w-[800px] h-[120vh] z-30 pt-16">
+      <div className="flex flex-col  bg-white w-[996px] h-[260vh] z-30 pt-16">
         <span
-          className="mainmenu pl-6 mt-6 text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
+          className="mainmenu pl-6 mt-6 text-5xl text-orange-500 border-black border-b-2 pr-[340px] pb-6 "
           onClick={closeMenu}
         >
           <FontAwesomeIcon icon={faArrowLeft} /> Main menu
         </span>
 
-        <span className="bg-gray-100  text-2xl font-bold pl-8 pt-8 pb-2">
+        <span className="bg-gray-100  text-5xl font-bold pl-8 pt-8 pb-2">
           Solutions
         </span>
 
-        <div>
-          <div className="h-36 mt-5 pb-6 pt-4 m-auto text-2xl">
+        <div className="w-[900px]"> 
+          <div className="h-36 mt-5 pb-6 pt-4 m-auto text-2xl w-full">
             <Link
               href={`/solutionPages/startups`}
               className="startup"
               onClick={closeSolution}
             >
-              <span className="text-[1.3em] font-semibold pl-12 ">
+              <span className="text-6xl font-semibold pl-12 ">
                 Startups
               </span>
               <FontAwesomeIcon
@@ -69,19 +69,19 @@ const SiderSolution = (props) => {
                 className="pl-6 transition-all hover:pl-2"
               />
             </Link>
-            <p className="pl-8  font-light text-2xl pt-4 w-[600px]">
+            <p className="pl-8 text-4xl font-medium  pt-4 w-[800px]">
               Get the only complete financial stack designed to help start and
               scale your business.
             </p>
           </div>
 
-          <div className="h-36 mt-10 pb-6 pt-4 m-auto text-2xl">
+          <div className="h-36 mt-14 pb-6 pt-4 m-auto text-2xl">
             <Link
               href={"/solutionPages/companysize"}
               className="companySize"
               onClick={closeSolution}
             >
-              <span className="text-[1.3em] font-semibold pl-12 ">
+              <span className="text-6xl font-semibold pl-12 ">
                 Mid-size companies
               </span>
               <FontAwesomeIcon
@@ -89,15 +89,15 @@ const SiderSolution = (props) => {
                 className="pl-6 transition-all hover:pl-2"
               />
             </Link>
-            <p className="pl-8 text-2xl font-light pt-4 w-[600px]">
+            <p className="pl-8 text-4xl font-medium pt-4 w-[800px]">
               Simplify travel and expenses with automation that makes it easy
               for employees to comply.
             </p>
           </div>
 
-          <div className="h-36 mt-10 pb-6 pt-4 m-auto text-2xl">
+          <div className="h-36 mt-14 pb-6 pt-4 m-auto text-2xl">
             <Link href={'/solutionPages/enterprise'} className="enterprise" onClick={closeSolution}>
-              <span className="text-[1.3em] font-semibold pl-12 ">
+              <span className="text-6xl font-semibold pl-12 ">
                 Enterprise
               </span>
               <FontAwesomeIcon
@@ -105,7 +105,7 @@ const SiderSolution = (props) => {
                 className="pl-6 transition-all hover:pl-2"
               />
             </Link>
-            <p className="pl-8 text-2xl font-light pt-4 w-[600px]">
+            <p className="pl-8 text-4xl font-medium pt-4 w-[800px]">
               Transform finance operations and improve productivity for your
               global workforce.
             </p>
