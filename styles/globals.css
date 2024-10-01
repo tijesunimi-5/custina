@@ -8,3 +8,17 @@
   width: 996px;
   height: 130vh;
 }
+h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 65px;
+}
+p {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+
+}

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Card from "@/layout/Card";
 import { FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -89,10 +90,10 @@ const index = () => {
             <li className="pb-6">Sign up all online in just 10 minutes</li>
           </ul>
 
-          <p className="text-red-400 text-4xl">
+          <Link href={'/solutionPages/startups/business-account'} className="text-red-400 text-4xl">
             Learn more about Custina business accounts{" "}
             <FontAwesomeIcon icon={faArrowRight} />
-          </p>
+          </Link>
         </div>
 
         <div className="m-auto mt-20 w-[950px]">
