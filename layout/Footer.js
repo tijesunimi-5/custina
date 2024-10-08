@@ -14,10 +14,10 @@ const Footer = () => {
             <h1 className="text-5xl font-bold mb-4">Product</h1>
             <ul className="w-[350px] text-gray-300 text-[1.9em] font-medium ">
               <li className="hover:text-orange-300">
-                <Link href={"/"}>Corporate card</Link>
+                <Link href={"/credit-card"}>Corporate card</Link>
               </li>
               <li className="hover:text-orange-300">
-                <Link href={"/"}>Expense management</Link>
+                <Link href={"/spend-management"}>Expense management</Link>
               </li>
               <li className="hover:text-orange-300">
                 <Link href={"/"}>Accounting automation</Link>
