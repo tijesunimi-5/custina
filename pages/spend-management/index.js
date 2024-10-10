@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { easeInOut } from "framer-motion";
-import { FaBuilding, FaEnvelope, FaFileAlt, FaFileInvoiceDollar, FaRegCreditCard, FaSearchDollar } from "react-icons/fa";
+import { FaBuilding, FaCheckCircle, FaDollarSign, FaEnvelope, FaFileAlt, FaFileInvoiceDollar, FaGlobe, FaPeopleCarry, FaRegCreditCard, FaSearchDollar } from "react-icons/fa";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPeopleCarry, faPeopleLine, faPersonRifle } from "@fortawesome/free-solid-svg-icons";
+import Button from "@/layout/Button";
 
 const index = () => {
   return (
@@ -69,7 +68,7 @@ const index = () => {
           </div>
         </Link>
 
-        <Link href={"/credit-card#reimbursements"}>
+        <Link href={"/spend-management#reimbursements"}>
           <div className="w-[820px] h-[400px] bg-gray-200 rounded-lg ml-20 mt-28">
             .
             <span className="">
@@ -89,7 +88,7 @@ const index = () => {
           </div>
         </Link>
 
-        <Link href={"/business-account"}>
+        <Link href={"/solutionPages/startups/business-account"}>
           <div className="w-[820px] h-[400px] bg-gray-200 rounded-lg ml-20 mt-28">
             .
             <span className="">
@@ -121,14 +120,131 @@ const index = () => {
 
           <li className="flex justify-center text-5xl ml-28 mt-20 w-[800px]">
             <span className="text-8xl pt-8">
-              <FaFileAlt />
-              <FontAwesomeIcon icon={faPeopleLine} />
+              <FaPeopleCarry />
             </span>
             <span className="text-[1em] pl-5 font-medium">
-              Block or require approval to spend on specific categories/merchants.
+              Block or require approval to spend on specific
+              categories/merchants.
+            </span>
+          </li>
+
+          <li className="flex justify-center text-5xl ml-28 mt-20 w-[800px]">
+            <span className="text-8xl pt-8">
+              <FaCheckCircle />
+            </span>
+            <span className="text-[1em] pl-5 font-medium">
+              Make easy-to-understand expense rules accessible at the time of
+              purchase.
             </span>
           </li>
         </ul>
+
+        <div className="pt-48 pl-32 w-[900px]">
+          <h1>Increase accountability with LiveBidgets.</h1>
+          <p className="w-[600px] mt-28 font-semibold">
+            {" "}
+            Set top-level budgets across departments and assign them to
+            department heads. They can provision spend to individuals or teams,
+            and track usage in real time.
+          </p>
+
+          <button className="rounded-xl border border-black text-4xl px-6 py-4 mt-24">
+            Explore spend limits
+          </button>
+        </div>
+
+        <div className="pt-48 pl-32 w-[900px]">
+          <h1>End the month-end hassle.</h1>
+          <p className="text-5xl mt-20 font-bold">
+            Custina is built for continuous close.
+          </p>
+          <p className="w-[600px] font-semibold">
+            {" "}
+            <br />
+            Custina integrates with top ERPs like QuickBooks and NetSuite,
+            helping you close your books every day, enabling in-month reporting,
+            and automating workflows.
+          </p>
+
+          <button className="rounded-xl border border-black text-4xl px-6 py-4 mt-24">
+            Explore accounting automation
+          </button>
+        </div>
+
+        <div className="pt-48 pl-32 w-[700px]">
+          <h1>Insights you can act on.</h1>
+          <p className="w-[600px] mt-28 font-semibold">
+            {" "}
+            Run real-time spend and budget reports across cards, reimbursements,
+            travel, and payments to find ways to save and improve ROI.
+          </p>
+        </div>
+
+        <div className="pt-48 pl-32 w-[900px]" id="reimbursements">
+          <h1>Reimburse employees anywhere, fast.</h1>
+          <p className="w-[600px] mt-28 font-semibold">
+            {" "}
+            US and international employees can get reimbursed in three days or
+            less - and your policy will be auto-applied.
+          </p>
+
+          <ul>
+            <li className="flex justify-center text-5xl  mt-20 w-[800px]">
+              <span className="text-8xl pt-12">
+                <FaGlobe />
+              </span>
+              <span className="text-[1em] pl-7 font-medium">
+                Reimburse employees in their local currency and bank account -
+                in 70 countries and counting.
+              </span>
+            </li>
+
+            <li className="flex justify-center text-5xl mt-20 w-[800px]">
+              <span className="text-8xl pt-8">
+                <FaBuilding />
+              </span>
+              <span className="text-[1em] pl-7 font-medium">
+                Subsidiaries can issue reimbursements from their local bank
+                account to simplify accounting.
+              </span>
+            </li>
+
+            <li className="flex justify-center text-5xl  mt-20 w-[800px]">
+              <span className="text-8xl ">
+                <FaDollarSign />
+              </span>
+              <span className="text-[1em] pl-7 font-medium">
+                Unlimited reimbursements with no per-transaction fees.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="pt-48 pl-32 w-[900px]">
+          <h1>Manage spend globally, operate locally.</h1>
+          
+          <p className="w-[600px] mt-20 font-semibold">
+            {" "}
+            <br />
+            Custina makes it easy to manage global spend across locations and operate in virtually any currency.
+          </p>
+
+          <button className="rounded-xl border border-black text-4xl px-6 py-4 mt-24">
+            Explore global capabilities
+          </button>
+        </div>
+
+
+        <div className="mt-32 w-[900px] text-center ml-10">
+          <h1>Welcome to the future of spend management.</h1>
+          <p className="mt-10 text-start">Let's talk about how Custina can help you automate control and compliance, and gain real-time insights to improve ROI,</p>
+
+          <div className="mt-10 text-start">
+            <Button>Get started</Button>
+          </div>
+        </div>
+
+        <div>FAQ</div>
       </div>
     </div>
   );

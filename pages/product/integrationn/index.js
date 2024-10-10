@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { easeInOut } from "framer-motion";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -14,7 +15,9 @@ const index = () => {
           simplify your workflow with Custina integrations.
         </h1>
         <p className="text-4xl pt-10 pl-8 font-semibold">
-          Free up your team with an unparalleled set of automatic classifications, and export options to fit your accounting needs, as well as top HRIS integrations.
+          Free up your team with an unparalleled set of automatic
+          classifications, and export options to fit your accounting needs, as
+          well as top HRIS integrations.
         </p>
 
         <motion.form
@@ -45,6 +48,69 @@ const index = () => {
             Get started
           </button>
         </motion.form>
+      </div>
+
+      <div>
+        <div className="ml-10 mt-44">
+          <h1>Close your books even faster.</h1>
+          <p className="mt-10">
+            Save hours preparing, reviewing, and exporting expenses with
+            accounting integrations that help you speed up your monthly close.
+          </p>
+          <Link
+            href={"/accounting-automation"}
+            className="flex text-4xl text-orange-500 mt-32"
+          >
+            Explore accounting automation <FaArrowRight className="ml-5 mt-1" />
+          </Link>
+        </div>
+
+        <div className="ml-10 mt-44">
+          <h1>Sync with any ERP for a real-time view.</h1>
+          <p className="mt-10">
+            Increase accountability with the most accurate view of adata you can
+            trust. Import and export your accounting data with our direct ERP
+            integrations or Universal ERP CSV transfer.
+          </p>
+          <Link
+            href={"/netsuite"}
+            className="flex text-4xl text-orange-500 mt-32"
+          >
+            Explore our award-winning NetSuite integration{" "}
+            <FaArrowRight className="ml-5 mt-1" />
+          </Link>
+        </div>
+
+        <div className="ml-10 mt-44">
+          <h1>automatically onboard and offboard employees more securely.</h1>
+          <p className="mt-10">
+            Custina connects with more than 50 of the top HR and identity
+            platforms, so you can automatically issue cards and adjust spending
+            amounts when employees join, switch roles, or leave. Org chart
+            changes will no longer hold up expense approvals.
+          </p>
+          <Link href={"/hris"} className="flex text-4xl text-orange-500 mt-32">
+            Connect your HRIS
+            <FaArrowRight className="ml-5 mt-1" />
+          </Link>
+        </div>
+
+        <div className="ml-10 mt-44">
+          <h1>Set up custom alerts for better accountability.</h1>
+          <p className="mt-10">
+            Custina connects with leading automation platforms Workato and
+            Zapier so you can set up custom transaction or payment alerts via
+            any system - like email, SLack, Microsoft Teams, even WhatsApp.
+          </p>
+          <Link
+            href={"/no-code"}
+            className="flex text-4xl text-orange-500 mt-32"
+          >
+            Explore automation tools <FaArrowRight className="ml-5 mt-1" />
+          </Link>
+        </div>
+
+        
       </div>
     </div>
   );
