@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .overlay {
-  background: rgba(30, 29, 24, 0.10);
+  background: rgba(30, 29, 24, 0.1);
   position: absolute;
   width: 996px;
   height: 130vh;
@@ -20,5 +20,83 @@ p {
 h2 {
   font-size: 3.5rem;
   font-weight: 500;
-
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
+  }
+  .overlay {
+    height: 78vh;
+  }
+}
+@media (min-width: 820px) {
+  .home-main {
+    width: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .home {
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    width: 780px;
+  }
+  .paternship-name {
+    padding-left: 50px;
+  }
+  .h-2-div {
+    width: 780px;
+  }
+  .h-3-div {
+    width: 520px;
+    margin-left: 0;
+  }
+  .footer {
+    width: 810px;
+    height: 0vh;
+    overflow-x: hidden;
+  }
+  .card {
+    width: 200px;
+  }
+  .shh {
+    width: 810px;
+    margin-left: -8px;
+  }
+  .shhh{
+    width: 790px;
+  }
+  .header{
+    width: 800px;
+  }
+  .air {
+    width: 100px;
+    margin-left: 50px;
+  }
+  .feature {
+    width: 550px;
+  }
+  .featurei {
+    width: 580px;
+    margin-left: 50px;
+  }
+  .cardl {
+    width: 550px;
+    margin-left: 90px;
+  }
+  .btn {
+    font-size: 1.5em;
+  }
+  .socials {
+    margin-top: 0px;
+  }
 }

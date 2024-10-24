@@ -77,62 +77,64 @@ const SideBar = () => {
       exit={{
         x: -800,
       }}
-      className="menu hidden  left-0 top-0 w-[900px] h-[150vh] backdrop-blur-[2px]  z-50 transition-all"
+      className="menu hidden  left-0 top-0 w-[900px] h-[150vh] backdrop-blur-[2px]  z-50 transition-all md:h-[120vh]"
     >
       <div
         onClick={stayOn}
-        className="option relative text-2xl font-bold bg-white w-[996px] h-[260vh] z-50 pt-16 mt-9 "
+        className="option relative text-2xl font-bold bg-white w-[996px] h-[260vh] z-50 pt-16 mt-9 md:h-[110vh]"
       >
         <li
-          className="list-none cursor-pointer pl-4 pt-8 pb-8 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2 text-6xl font-semibold"
+          className="list-none cursor-pointer pl-4 pt-5 pb-5 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 border-b-2 text-6xl font-semibold md:text-4xl"
           onClick={sideProduct}
         >
           Products{" "}
           <FontAwesomeIcon
-            className="justify-center pl-[580px] text-orange-400"
+            className="justify-center pl-[580px] text-orange-400 md:ml-[180px]"
             icon={faLongArrowRight}
           />
         </li>
 
         <li
-          className="list-none cursor-pointer pl-4 pt-8 pb-8 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold"
+          className="list-none cursor-pointer pl-4 pt-5 pb-5 bg-slate-200 shadow-md rounded-r-md border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold md:text-4xl"
           onClick={sideSolution}
         >
           Solutions{" "}
           <FontAwesomeIcon
-            className="justify-center pl-[560px] text-orange-400"
+            className="justify-center pl-[560px] text-orange-400 md:ml-[189px]"
             icon={faLongArrowRight}
           />
         </li>
 
         <li
-          className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-8 pb-8 border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold"
+          className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-5 pb-5 border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold md:text-4xl"
           onClick={sideResources}
         >
           Resources{" "}
           <FontAwesomeIcon
-            className="justify-center pl-[540px] text-orange-400"
+            className="justify-center pl-[540px] text-orange-400 md:ml-[195px]"
             icon={faLongArrowRight}
           />
         </li>
 
         <Link href={"/customer"}>
-          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-8 pb-8 border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold">
+          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-5 pb-5 border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold md:text-4xl">
             Customer{" "}
           </li>
         </Link>
 
         <Link href={"/pricing"}>
-          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-8 pb-8 border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold">
+          <li className="list-none cursor-pointer bg-slate-200 shadow-md rounded-r-md pl-4 pt-5 pb-5 border-black border-t-2 mt-2 border-b-2 text-6xl font-semibold md:text-4xl">
             Pricing{" "}
           </li>
         </Link>
 
-        <div className="flex align-middle text-3xl absolute bottom-32 right-0 left-0  font-medium  border-t-2 border-black justify-center bg-white w-[800px] pt-10 m-auto">
+        <div className="flex align-middle text-3xl absolute bottom-32 right-0 left-0  font-medium  border-t-2 border-orange-500 justify-center bg-white w-[800px] pt-10 m-auto md:mt-[-200px]">
           <Button>Sign in</Button>
 
           <span className="ml-8">
-            <Button>Contact team</Button>
+            <Link href={"/"}>
+              <Button>Contact team</Button>
+            </Link>
           </span>
         </div>
         <Sider onClick={turnOffSideProduct} dashoff={closeDash} />

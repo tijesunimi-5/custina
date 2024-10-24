@@ -15,7 +15,7 @@ const Card = (props) => {
       transition={{
         duration: 1.5,
       }}
-      className="cardl w-[790px] relative  m-auto  bg-slate-100 rounded-2xl shadow-xl mt-10 ml-[-30px] overflow-hidden"
+      className="card relative  m-auto w-full h-auto bg-slate-100 rounded-2xl shadow-xl mt-10 ml-[-30px] overflow-hidden"
     >
       {props.children}
     </motion.div>

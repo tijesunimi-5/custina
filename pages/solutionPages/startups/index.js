@@ -14,12 +14,18 @@ const index = () => {
     <div
       className={`startup  m-auto w-[996px] justify-center pr-12 align-center pl-2 ${inter.className} `}
     >
-      <div className="bg-[#f0f8ff] pt-36 w-[996px] text-black h-[120vh] ml-[-10px] pl-16">
-        <div>Image needed</div>
-        <h1 className="text-7xl font-extrabold space-x-2 tracking-wide">
+      <div className="relative bg-[#f0f8ff] pt-36 w-[996px] text-black h-[120vh] ml-[-10px] pl-16 md:h-[75px]">
+        <div>
+          <img
+            src="/hero.jpg"
+            className="w-full absolute top-5 left-0 right-0"
+          />
+          <div className="overlay absolute "></div>
+        </div>
+        <h1 className="relative text-7xl font-extrabold space-x-2 tracking-wide z-30 md:mt-12">
           The financial stack you can bank on.
         </h1>
-        <p className="text-4xl pt-10 pl-8 font-semibold">
+        <p className="relative text-4xl pt-10 pl-8 font-semibold md:mt-5">
           Get business banking, card, bill pay, travel, and reimbursements --
           all in one scalable solution
         </p>
@@ -38,25 +44,23 @@ const index = () => {
             duration: 1,
             ease: easeInOut,
           }}
-          className="mt-10 ml-12 pl-0 mr-16 w-[722px] relative"
+          className="mt-10 ml-12 pl-0 mr-16 w-[723px] relative md:mt-20"
         >
           <span className="absolute flex justify-center align-middle mt-2 h-16 ml-2 text-black text-4xl border-r-2 pr-2 border-black">
-            <FaEnvelope className="text-5xl mt-2" />  
+            <FaEnvelope className="text-5xl mt-2" />
           </span>
           <input
             type="email"
             placeholder="Work email address"
             className="w-[750px] border-2 rounded-[20px] h-20 px-20 text-4xl border-black "
           />
-          <button className="absolute right-[-24px] rounded-tr-[20px] rounded-br-[20px] top-[1.95px] bg-orange-500 h-[79px] w-64 text-white text-3xl font-semibold tracking-widest">
+          <button className="absolute right-[-25px] rounded-tr-[20px] rounded-br-[20px] top-[1.95px] bg-orange-500 h-[79px] w-64 text-white text-3xl font-semibold tracking-widest">
             Get started
           </button>
         </motion.form>
-
-        
       </div>
 
-      <div className="flex flex-col justify-between w-[720px] h-[400px] bg-[#f0f8ff] mt-48 m-auto text-center">
+      <div className="relative flex flex-col justify-between w-[720px] h-[400px] bg-[#f0f8ff] mt-48 m-auto text-center md:mt-[800px]">
         <div className="text-center">image needed</div>
         <h1 className="text-3xl font-semibold">Testimony Section</h1>
         <p className="text-4xl font-semibold">
@@ -64,20 +68,18 @@ const index = () => {
         </p>
       </div>
 
-      
-
       <div className="flex flex-col justify-start w-[995px] mt-32">
         <div>image needed</div>
         <div className="w-[890px] pl-20">
-          <h1 className="text-6xl font-extrabold m-auto text-start">
+          <h1 className="text-6xl font-extrabold m-auto text-start md:text-5xl">
             Make your money work harder with banking and treasury.
           </h1>
-          <p className="pt-10 text-5xl letter-spacing-[5px] leading-[45px] font-medium text-start">
+          <p className="pt-10 text-5xl letter-spacing-[5px] leading-[45px] font-medium text-start md:text-3xl">
             Trusted by 1 in 3 venture-backed US startups, the Custina account
             gives you access to checking, treasury, and FDIC insurance all in
             one account.
           </p>
-          <ul className="mt-9 text-4xl font-medium list-disc ml-6">
+          <ul className="mt-9 text-4xl font-medium list-disc ml-6 md:text-2xl">
             <li className="pb-6">
               Send fast ACH, checks, and wires in 41 currencies
             </li>
@@ -90,58 +92,57 @@ const index = () => {
             <li className="pb-6">Sign up all online in just 10 minutes</li>
           </ul>
 
-          <Link href={'/solutionPages/startups/business-account'} className="text-red-400 text-4xl">
+          <Link
+            href={"/solutionPages/startups/business-account"}
+            className="text-red-400 text-4xl md:text-2xl"
+          >
             Learn more about Custina business accounts{" "}
             <FontAwesomeIcon icon={faArrowRight} />
           </Link>
         </div>
 
         <div className="m-auto mt-20 w-[950px]">
-          <h1 className="text-6xl font-extrabold text-center">
+          <h1 className="text-6xl font-extrabold text-center md:text-5xl">
             The operating account for founders, by founders.
           </h1>
 
           <div className="m-auto ml-28">
             <Card>
-              <h1 className="text-5xl font-bold pl-10 pt-6">
-                Increase your spending power
-              </h1>
-              <p className="text-4xl font-medium pt-8 pl-10">
-                Extend your runway with instant Custina card payments and up to
-                20x higher limits with a Custina business account.
-              </p>
+              <div className="py-10">
+                <h1 className="text-5xl font-bold pl-10 pt-6">
+                  Earn yield, stay liquid
+                </h1>
+                <p className="text-4xl font-medium pt-8 pl-10">
+                  Earn high yield on your operational cash with a fully
+                  integrated treasury account. No minimums or hidden fees,
+                  automated transfers, and 100% liquidity.
+                </p>
+              </div>
             </Card>
 
             <Card>
-              <h1 className="text-5xl font-bold pl-10 pt-6">
-                Earn yield, stay liquid
-              </h1>
-              <p className="text-4xl font-medium pt-8 pl-10">
-                Earn high yield on your operational cash with a fully integrated
-                treasury account. No minimums or hidden fees, automated
-                transfers, and 100% liquidity.
-              </p>
+              <div className="py-10">
+                <h1 className="text-5xl font-bold pl-10 pt-6">
+                  Secure your captial
+                </h1>
+                <p className="text-4xl font-medium pt-8 pl-10">
+                  Safeguard your funds with customizable approval flows, 24/7
+                  support, and up to $6M in FDIC insurance (20x the standard
+                  protection) through our program banks*.
+                </p>
+              </div>
             </Card>
 
             <Card>
-              <h1 className="text-5xl font-bold pl-10 pt-6">
-                Secure your captial
-              </h1>
-              <p className="text-4xl font-medium pt-8 pl-10">
-                Safeguard your funds with customizable approval flows, 24/7
-                support, and up to $6M in FDIC insurance (20x the standard
-                protection) through our program banks*.
-              </p>
-            </Card>
-
-            <Card>
-              <h1 className="text-5xl font-bold pl-10 pt-6">
-                Automated bill pay
-              </h1>
-              <p className="text-4xl font-medium pt-8 pl-10">
-                Keep more cash on hand with a business account that allows you
-                to settle bills up to 5 days sooner with integrated bill pay.
-              </p>
+              <div className="py-10">
+                <h1 className="text-5xl font-bold pl-10 pt-6">
+                  Automated bill pay
+                </h1>
+                <p className="text-4xl font-medium pt-8 pl-10">
+                  Keep more cash on hand with a business account that allows you
+                  to settle bills up to 5 days sooner with integrated bill pay.
+                </p>
+              </div>
             </Card>
           </div>
         </div>
@@ -306,7 +307,7 @@ const index = () => {
               </li>
             </ul>
 
-            <a className="text-2xl text-red-500 font-semibold">
+            <a className="text-4xl text-red-500 font-semibold">
               Get started <FontAwesomeIcon icon={faArrowRight} />
             </a>
           </div>
